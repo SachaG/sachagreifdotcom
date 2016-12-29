@@ -1,0 +1,189 @@
+about:
+  title: About
+  background: '#ffffff'
+  text: '#333333'
+  description: >
+    I'm a designer, developer, and entrepreneur 
+    originally from Paris, France but now living in Osaka, Japan. 
+    After studying computer science and then becoming a freelance UI designer, 
+    I now spend my time working on personal projects, 
+    contributing to open source, and writing. 
+    [Say hello](mailto:hello@sachagreif.com).
+  social: 
+    - title: Twitter
+      url: http://twitter.com/sachagreif
+    # - title: Medium
+    #   url: https://medium.com/@sachagreif
+    - title: GitHub
+      url: http://github.com/sachag
+    - title: Instagram
+      url: http://instagram.com/sachagreif
+    - title: Dribbble
+      url: https://dribbble.com/sacha
+    - title: SoundCloud
+      url: https://soundcloud.com/sacha-greif
+
+
+code:
+  title: Code
+  background: '#F5DECE'
+  text: '#333333'
+  description: >
+    The duct tape that keeps the Internet together.
+  items: 
+    - title: Telescope
+      description: >
+        An open-source full-stack app framework based on React, GraphQL, 
+        Meteor, and MongoDB, with now more than 5000 stars and 150 contributors.
+      url: http://telescopeapp.org
+    - title: Discover Meteor
+      description: >
+        I learned the [Meteor](http://meteor.com) JavaScript framework to build Telescope, 
+        and decided to reinvest the knowledge I had just acquired to co-author
+        a book together with [Tom Coleman](https://github.com/tmeasday).
+      url: http://discovermeteor.com
+    - title: State Of JavaScript
+      description: >
+        I got tired of all this talk of “JavaScript fatigue”, so I 
+        created a survey to get more data about recent trends in the 
+        JavaScript community.
+      url: http://stateofjs.com
+
+projects:
+  title: Projects
+  background: '#F5DECE'
+  text: '#333333'
+  description: >
+    Get a cool idea; spend way too much time on it; launch; rinse; repeat.
+  items: 
+    - title: Sidebar
+      description: >
+        I first got the idea for a design community all the way back in 2012,
+        and that ended up becoming Sidebar.
+        Sidebar now sends its five daily links to over 35000 subscribers.
+      url: http://sidebar.io
+    - title: Hacker News Kansai
+      description: >
+        I co-organize the local Hacker News meetup here in Osaka.
+      url: http://hnkansai.org
+    - title: Community Building Guide
+      description: I wrote a free guide to help people build successful communities.
+      url: http://www.communitybuildingguide.com/
+    - title: Design Portfolio
+      description: > 
+        In a past life, I was a UI designer. You can find a collection
+        of my client work here. 
+      url: http://work.sachagreif.com/
+
+writing:
+  title: Writing
+  background: '#E8C8ED'
+  text: '#333333'
+  description: >
+    Like coding, but without all the errors.
+  items:
+    - title: What Kind Of Logo Do You Get For $5?
+      description: >
+        I went on [Fiver](http://fiver.com) to see what kind of logo I could get for just $5. 
+        The results were pretty surprising (or maybe not…).
+      url: https://medium.com/swlh/in-the-past-couple-years-startups-have-started-realizing-that-good-design-can-make-the-difference-2fdeb90d390a#.bzorvva7p
+    - title: The Product Spectrum
+      description: >
+        A blueprint for being an entrepreneur, from being a consultant to building consumer products.
+      url: https://medium.com/my-thoughts-7/the-product-spectrum-bb2084b6f5b3#.i5o534cz6
+    - title: The Spiderweb Strategy
+      description: >
+        How to organize your products in a way that makes sense (and makes cents, too).
+      url: https://medium.com/@sachagreif/the-spiderweb-strategy-12ebd2f35595#.6qcqpo4xr
+    - title: A Study Plan To Cure JavaScript Fatigue
+      description: >
+        
+      url: https://medium.freecodecamp.com/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.1f6bbq49y
+    - title: 'Flat Pixels: The Battle Between Flat Design & Skeuomorphism'
+      description: sdf
+      url: http://sachagreif.com/flat-pixels/
+
+    - title: Step by Step UI design
+      description: My first ebook, a surprise success that set me on the path of the solo entrepreneur.
+      url: http://sachagreif.com/ebook/
+
+# misc:
+#   title: Misc
+#   background: '#A3D2DF'
+#   text: '#333333'
+#   description: >
+#     Other stuff
+#   items: 
+
+   
+podcasts:
+  title: Podcasts
+  background: '#333333'
+  text: '#eeeeee'
+  description: >
+    Hear me live.
+  items: 
+    - title: React Native Radio
+      description: >
+        43 The State of JavaScript and React Native
+      url: https://devchat.tv/react-native-radio/43-the-state-of-javascript-and-react-native-with-sacha-greif/
+      date: 10/24/2016
+    - title: UI Breakfast Podcast
+      description: >
+        Episode 40: Learning Through Projects
+      url: http://uibreakfast.com/40-learning-projects-sacha-greif/
+      date: 11/10/2016
+    - title: Binpress Podcast
+      description: >
+        Epsiode 39
+      url: http://www.binpress.com/blog/2015/07/21/podcast-39-sacha-greif/
+      date: 07/21/2015
+    - title: Product People
+      description: >
+        EP63: How things get popular
+      url: http://www.productpeople.tv/63
+      date: 08/15/2014
+    - title: The Industry
+      description: >
+        #10: Facebook IPO’d, The Toolbox launches, Parse for iOS and Android, and Say Hello to Octicons
+      url: http://theindustry.cc/2012/05/22/10-facebook-ipod-the-toolbox-launches-parse-for-ios-and-android-and-say-hello-to-octicons/
+      date: 05/22/2012
+    - title: The Changelog
+      description: >
+        Discover Meteor.js
+      url: https://changelog.com/podcast/91
+      date: 05/29/2013
+    - title: Upfront Podcast
+      description: >
+        Episode 12 - MeteorJS and Side Projects
+      url: http://upfrontpodcast.com/2013/04/12/episode12.html
+      date: 04/12/2013
+    - title: Discover Meteor Podcast
+      description: >
+        5 episodes covering various aspects of Meteor
+      url: https://www.discovermeteor.com/podcast
+      date: 09/30/2015
+
+graveyard:
+  title: Graveyard
+  background: '#333333'
+  text: '#eeeeee'
+  description: >
+    You gotta learn to let them go.
+  items: 
+    - title: Patternify
+      description: >
+        A simple pattern generation tool, and one of my first ever side projects. Still works!
+      url: http://patternify.com/
+    - title: Folyo
+      description: My first “startup”. After many years trying (and failing) to make it work, sold the site to the talended [Workshop](http://letsworkshop.com/) crew.
+      url: http://folyo.me
+    - title: Screenings
+      description: An attempt at building a directory of design talks. On life support to a lack of updates. 
+      url: https://screenings.io
+    - title: The Toolbox
+      description: A directory of design resources. The domain expired, and then got a second life thanks to a new owner.
+      url: http://thetoolbox.cc
+    - title: Kandan
+      description: I designed the UI for an open-source chat app. Besides being a fun project, it was also the inspiration for my [UI design](http://sachagreif.com/ebook) ebook.
+      url: http://getkandan.com/

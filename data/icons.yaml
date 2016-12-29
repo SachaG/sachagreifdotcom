@@ -1,0 +1,278 @@
+# https://codepen.io/ruandre/pen/howFi
+sg: <svg viewBox="0 0 512 512"><path d="M256 68.4C152.4 68.4 68.4 152.4 68.4 256c0 103.6 84 187.6 187.6 187.6S443.6 359.6 443.6 256C443.6 152.4 359.6 68.4 256 68.4zM410.6 247.3c-40.3-6.6-77.3-7-111-1.1 -3.8-8.8-7.8-17.6-12-26.3 36.1-15.6 65.1-36.9 86.7-63.8C395.4 181 408.6 212.6 410.6 247.3zM350.5 133.4c-18.8 24.3-44.8 43.5-78 57.5 -15.9-29.1-34-57.5-54.5-85 12.2-3.1 24.9-4.9 38-4.9C291.6 101 324.3 113.2 350.5 133.4zM186.1 117.9c20.8 27.2 39.3 55.3 55.3 84.1 -38 11.2-83.4 16.9-135.8 17.3C116.4 175 146.3 138.1 186.1 117.9zM101 256c0-1.3 0.2-2.7 0.2-4 60.2-0.1 112.1-7 155.6-20.7 3.6 7.4 7.1 14.9 10.5 22.4 -52.8 16.5-96.4 50.4-130.3 101.3C114.5 328.2 101 293.6 101 256zM160.9 378.1c30.8-48.3 70.1-79.7 118.8-94.2 14.5 37.8 25.2 76.8 31.9 116.6 -17.3 6.7-36 10.5-55.6 10.5C220.1 411 187.2 398.6 160.9 378.1zM342 384.8c-6.9-36.8-16.9-72.8-30-107.8 29.3-4.1 61.6-3.1 96.9 3.1C402.1 323.6 377.2 361.3 342 384.8z"/></svg>
+dribbble: <svg viewBox="0 0 512 512"><path d="M256 68.4C152.4 68.4 68.4 152.4 68.4 256c0 103.6 84 187.6 187.6 187.6S443.6 359.6 443.6 256C443.6 152.4 359.6 68.4 256 68.4zM410.6 247.3c-40.3-6.6-77.3-7-111-1.1 -3.8-8.8-7.8-17.6-12-26.3 36.1-15.6 65.1-36.9 86.7-63.8C395.4 181 408.6 212.6 410.6 247.3zM350.5 133.4c-18.8 24.3-44.8 43.5-78 57.5 -15.9-29.1-34-57.5-54.5-85 12.2-3.1 24.9-4.9 38-4.9C291.6 101 324.3 113.2 350.5 133.4zM186.1 117.9c20.8 27.2 39.3 55.3 55.3 84.1 -38 11.2-83.4 16.9-135.8 17.3C116.4 175 146.3 138.1 186.1 117.9zM101 256c0-1.3 0.2-2.7 0.2-4 60.2-0.1 112.1-7 155.6-20.7 3.6 7.4 7.1 14.9 10.5 22.4 -52.8 16.5-96.4 50.4-130.3 101.3C114.5 328.2 101 293.6 101 256zM160.9 378.1c30.8-48.3 70.1-79.7 118.8-94.2 14.5 37.8 25.2 76.8 31.9 116.6 -17.3 6.7-36 10.5-55.6 10.5C220.1 411 187.2 398.6 160.9 378.1zM342 384.8c-6.9-36.8-16.9-72.8-30-107.8 29.3-4.1 61.6-3.1 96.9 3.1C402.1 323.6 377.2 361.3 342 384.8z"/></svg>
+twitter: <svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
+github: <svg viewBox="0 0 512 512"><path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"/></svg>
+instagram: <svg viewBox="0 0 512 512"><path d="M365.3 234.1h-24.7c1.8 7 2.9 14.3 2.9 21.9 0 48.3-39.2 87.5-87.5 87.5 -48.3 0-87.5-39.2-87.5-87.5 0-7.6 1.1-14.9 2.9-21.9h-24.7V354.4c0 6 4.9 10.9 10.9 10.9H354.4c6 0 10.9-4.9 10.9-10.9V234.1H365.3zM365.3 157.6c0-6-4.9-10.9-10.9-10.9h-32.8c-6 0-10.9 4.9-10.9 10.9v32.8c0 6 4.9 10.9 10.9 10.9h32.8c6 0 10.9-4.9 10.9-10.9V157.6zM256 201.3c-30.2 0-54.7 24.5-54.7 54.7 0 30.2 24.5 54.7 54.7 54.7 30.2 0 54.7-24.5 54.7-54.7C310.7 225.8 286.2 201.3 256 201.3M365.3 398.1H146.7c-18.1 0-32.8-14.7-32.8-32.8V146.7c0-18.1 14.7-32.8 32.8-32.8h218.7c18.1 0 32.8 14.7 32.8 32.8v218.7C398.1 383.4 383.5 398.1 365.3 398.1"/></svg>
+soundcloud: <svg viewBox="0 0 512 512"><path d="M443.5 273.1c0 25.1-20.4 45.5-45.5 45.5H271.5V162.3c4.8-1.8 9.9-3.1 15.1-3.9 4.1-0.6 8.3-1 12.5-1 42.3 0 77 32.7 80.3 74.1 5.7-2.5 11.9-4 18.6-4C423.1 227.6 443.5 248 443.5 273.1zM224.2 193.2v125.4h15.1v-134.5c-3.4 3.7-6.4 7.8-9 12.1C228.4 195 226.3 194.1 224.2 193.2zM247.6 318.6h15.1v-152.4c-5.4 2.7-10.5 6.1-15.1 9.9V318.6zM151.8 208.9v109.7h15.1V196.9C161.3 200.2 156.2 204.2 151.8 208.9zM106.5 231.6v86.5c1.9 0.2 3.7 0.4 5.7 0.4h7.9v-86.6c-2.6-0.5-5.2-0.7-7.9-0.7C110.3 231.3 108.4 231.4 106.5 231.6zM86.5 310.2c3.4 2.5 7.2 4.5 11.3 5.9v-82.4c-4.1 1.4-7.9 3.4-11.3 5.9V310.2zM128.4 234.4v84.2h15.1v-98.7c-3.4 5.6-6 11.8-7.5 18.4C133.6 236.8 131.1 235.5 128.4 234.4zM175.9 318.6h15.1V188.8c-5.3 0.7-10.3 2-15.1 3.8V318.6zM200.1 318.6h15.1v-128.3c-4.8-1.2-9.9-1.9-15.1-1.9V318.6L200.1 318.6zM79.1 303.4v-56.9c-6.6 7.6-10.6 17.6-10.6 28.5C68.5 285.8 72.5 295.7 79.1 303.4z"/></svg>
+
+smiley: >
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+     height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+  <g id="Guides">
+    <g id="_x32_0_px_2_">
+    </g>
+    <g id="_x32_0px">
+    </g>
+    <g id="_x34_0px">
+    </g>
+    <g id="_x34_4_px">
+    </g>
+    <g id="_x34_8px">
+      <g id="_x31_6px">
+      </g>
+      <g id="square_4px">
+        <g id="_x32_8_px">
+          <g id="square_4px_2_">
+          </g>
+          <g id="square_4px_3_">
+          </g>
+          <g id="square_4px_1_">
+          </g>
+          <g id="_x32_4_px_2_">
+          </g>
+          <g id="_x31_2_px">
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Icons">
+    </g>
+    <g id="_x32_0_px">
+    </g>
+    <g id="square_6px">
+      <g id="_x31_2_PX">
+      </g>
+    </g>
+    <g id="_x33_6_px">
+      <g id="_x33_2_px">
+        <g id="_x32_8_px_1_">
+          <g id="square_6px_1_">
+          </g>
+          <g id="_x32_0_px_1_">
+            <g id="_x31_2_PX_2_">
+            </g>
+            <g id="_x34_8_px">
+              <g id="_x32_4_px">
+              </g>
+              <g id="_x32_4_px_1_">
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_x32_0_px_3_">
+    </g>
+    <g id="_x32_0_px_4_">
+    </g>
+    <g id="New_Symbol_8">
+      <g id="_x32_4_px_3_">
+      </g>
+    </g>
+  </g>
+  <g id="Artboard">
+  </g>
+  <g id="Free_Icons">
+    <g>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="7.5,14.5 
+        9.5,16.5 14.5,16.5 16.5,14.5    "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="6,9.5 8,8 
+        10,9.5    "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="14,9.5 
+        16,8 18,9.5     "/>
+      <polygon style="fill:none;stroke-linejoin:round;stroke-miterlimit:10;" points="22.5,18 12,23.5 1.5,18 1.5,6 
+        12,0.5 22.5,6     "/>
+    </g>
+  </g>
+  </svg>
+
+robot: >
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+     height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+  <g id="Guides">
+    <g id="_x32_0_px_2_">
+    </g>
+    <g id="_x32_0px">
+    </g>
+    <g id="_x34_0px">
+    </g>
+    <g id="_x34_4_px">
+    </g>
+    <g id="_x34_8px">
+      <g id="_x31_6px">
+      </g>
+      <g id="square_4px">
+        <g id="_x32_8_px">
+          <g id="square_4px_2_">
+          </g>
+          <g id="square_4px_3_">
+          </g>
+          <g id="square_4px_1_">
+          </g>
+          <g id="_x32_4_px_2_">
+          </g>
+          <g id="_x31_2_px">
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Icons">
+    </g>
+    <g id="_x32_0_px">
+    </g>
+    <g id="square_6px">
+      <g id="_x31_2_PX">
+      </g>
+    </g>
+    <g id="_x33_6_px">
+      <g id="_x33_2_px">
+        <g id="_x32_8_px_1_">
+          <g id="square_6px_1_">
+          </g>
+          <g id="_x32_0_px_1_">
+            <g id="_x31_2_PX_2_">
+            </g>
+            <g id="_x34_8_px">
+              <g id="_x32_4_px">
+              </g>
+              <g id="_x32_4_px_1_">
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_x32_0_px_3_">
+    </g>
+    <g id="_x32_0_px_4_">
+    </g>
+    <g id="New_Symbol_8">
+      <g id="_x32_4_px_3_">
+      </g>
+    </g>
+  </g>
+  <g id="Artboard">
+  </g>
+  <g id="Free_Icons">
+    <g>
+      <polygon style="fill:none;stroke-linejoin:round;stroke-miterlimit:10;" points="10.5,6.5 9,7.5 7.5,6.5 7.5,5 
+        9,4 10.5,5    "/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12" y1="0.5" x2="12" y2="1.5"/>
+      <polygon style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="16,23.5 
+        8,23.5 6.5,16 9,13.5 15,13.5 17.5,16    "/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="12" y1="10.5" x2="12" y2="13.5"/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="7.6" y1="21.5" x2="16.4" y2="21.5"/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="2.5,16 
+        3,19 6.844,17.719     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="0.5,12 
+        0.5,14 2.5,16 4.5,14 4.5,12     "/>
+      <polygon style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="16,10.5 
+        20.5,6 16,1.5 8,1.5 3.5,6 8,10.5    "/>
+      <polygon style="fill:none;stroke-linejoin:round;stroke-miterlimit:10;" points="13.5,6.5 15,7.5 16.5,6.5 16.5,5 
+        15,4 13.5,5     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="21.5,16 
+        21,19 17.156,17.719     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="23.5,12 
+        23.5,14 21.5,16 19.5,14 19.5,12     "/>
+    </g>
+  </g>
+  </svg>
+
+writing: >
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+  <g id="Guides">
+    <g id="_x32_0_px_2_">
+    </g>
+    <g id="_x32_0px">
+    </g>
+    <g id="_x34_0px">
+    </g>
+    <g id="_x34_4_px">
+    </g>
+    <g id="_x34_8px">
+      <g id="_x31_6px">
+      </g>
+      <g id="square_4px">
+        <g id="_x32_8_px">
+          <g id="square_4px_2_">
+          </g>
+          <g id="square_4px_3_">
+          </g>
+          <g id="square_4px_1_">
+          </g>
+          <g id="_x32_4_px_2_">
+          </g>
+          <g id="_x31_2_px">
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Icons">
+    </g>
+    <g id="_x32_0_px">
+    </g>
+    <g id="square_6px">
+      <g id="_x31_2_PX">
+      </g>
+    </g>
+    <g id="_x33_6_px">
+      <g id="_x33_2_px">
+        <g id="_x32_8_px_1_">
+          <g id="square_6px_1_">
+          </g>
+          <g id="_x32_0_px_1_">
+            <g id="_x31_2_PX_2_">
+            </g>
+            <g id="_x34_8_px">
+              <g id="_x32_4_px">
+              </g>
+              <g id="_x32_4_px_1_">
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="_x32_0_px_3_">
+    </g>
+    <g id="_x32_0_px_4_">
+    </g>
+    <g id="New_Symbol_8">
+      <g id="_x32_4_px_3_">
+      </g>
+    </g>
+  </g>
+  <g id="Artboard">
+  </g>
+  <g id="Free_Icons">
+    <g>
+      <polygon style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="10.5,22.5 
+        0.5,22.5 0.5,2.5 15.5,2.5 15.5,17.5     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="10.5,22.5 
+        10.5,17.5 15.5,17.5     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="3.5,7 
+        5,8.5 7.5,5.5     "/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="3.5,12.5 
+        5,14 7.5,11     "/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="8.5" y1="7.5" x2="12.5" y2="7.5"/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="8.5" y1="13.5" x2="12.5" y2="13.5"/>
+      
+        <rect x="17.5" y="2.5" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" width="3" height="17"/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="17.5,19.5 
+        19,22.5 20.5,19.5     "/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="17.5" y1="7.5" x2="20.5" y2="7.5"/>
+      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="20.5,3.5 
+        23.5,3.5 22.5,10.5 23.5,11.5    "/>
+      
+        <line style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" x1="19" y1="2.5" x2="19" y2="1.5"/>
+    </g>
+  </g>
+  </svg>
