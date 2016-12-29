@@ -9,7 +9,7 @@ import Texture from './texture.js'
 
 const Section = ({title, description, items, index, background, text, cta}) => 
   
-  <SectionBlock id={`section-${index}`} className="section" style2={{background: `rgba(0,0,0,${0+index/30})`, backgroundColor: background, color: text}} index={index}>
+  <SectionBlock id={`section-${index}`} className="section" style={{backgroundColor: background}} index={index}>
 
     <Texture className="svg-background" width={100} height={100} data={{}} options={{index}}/>
 

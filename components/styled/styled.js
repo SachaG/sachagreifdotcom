@@ -92,7 +92,7 @@ export const Logo = styled.h1`
   width: 120px;
   height: 120px;
   background: ${black};
-  background: ${orangered};
+  // background: ${orangered};
   // border: 4px solid ${black};
   padding: 5px;
   border-radius: 100%;
@@ -101,7 +101,7 @@ export const Logo = styled.h1`
     fill: white;
   }
   &:hover{
-    background: ${orangered};
+    // background: ${orangered};
   }
 `
 
@@ -176,9 +176,7 @@ export const SectionBlock = styled.section`
   //     fill: #ffffff;
   //   }
   // }
-  a{
-    color: ${props => props && props.text};
-  }
+
   .svg-background{
     position: absolute;
     top: 0px;
@@ -242,12 +240,21 @@ export const AboutDescription = styled.div`
   }
 `
 
+export const AboutLinksBlock = styled.div`
+  margin-bottom: ${spacing};
+`
+
+export const AboutLink = styled.a`
+  display: block;
+`
+
 export const SectionDescription = styled.div`
   font-size: ${medium};
 `
 
 export const SocialLinks = styled.div`
   display: flex;
+  margin-bottom: ${spacing};
   > * + * {
     margin-left: ${halfSpacing};
   }

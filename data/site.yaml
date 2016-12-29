@@ -1,6 +1,6 @@
 about:
   title: About
-  background: '#ffffff'
+  background: '#EB613D'
   text: '#333333'
   # description: >
   #   Designer, developer, and entrepreneur. 
@@ -29,7 +29,7 @@ about:
 
 code:
   title: Code
-  background: '#F5DECE'
+  background: '#A3D2DF'
   text: '#333333'
   description: >
     The duct tape that keeps the world together.
@@ -64,9 +64,7 @@ projects:
   items: 
     - title: Sidebar
       description: >
-        I first got the idea for a design community all the way back in 2012,
-        and that ended up becoming Sidebar.
-        Sidebar now sends its five daily links to over 35000 subscribers.
+        My daily newsletter of the five best design links, now with over 35000 subscribers.
       url: http://sidebar.io
     - title: Hacker News Kansai
       description: >
@@ -75,11 +73,14 @@ projects:
     - title: Community Building Guide
       description: I wrote a free guide to help people build successful communities.
       url: http://www.communitybuildingguide.com/
+    # - title: Crater.io
+    #   description: I designed a Telescope theme for tech news site Crater.io.
+    #   url: http://crater.io
     - title: Design Portfolio
       description: > 
         In a past life, I was a UI designer. You can find a collection
         of my client work here. 
-      url: http://work.sachagreif.com/
+      url: http://work.sachagreif.com/  
 
 writing:
   title: Writing
@@ -132,7 +133,7 @@ writing:
    
 podcasts:
   title: Podcasts
-  background: '#333333'
+  background: '#C6F0D5'
   text: '#eeeeee'
   description: >
     Now featuring 20% more French accent.
@@ -180,7 +181,7 @@ podcasts:
 
 graveyard:
   title: Graveyard
-  background: '#333333'
+  background: '#404448'
   text: '#eeeeee'
   description: >
     You gotta learn to let them go.
@@ -197,10 +198,14 @@ graveyard:
       description: A directory of design resources. The domain expired, and then got a second life thanks to a new owner.
       url: http://thetoolbox.cc
       date: 05/05/2012
-    - title: Kandan
-      description: I designed the UI for an open-source chat app. Besides being a fun project, it was also the inspiration for my [UI design](http://sachagreif.com/ebook) ebook.
-      url: http://getkandan.com/
-      date: 04/04/2012
+    # - title: Kandan
+    #   description: I designed the UI for an open-source chat app. Besides being a fun project, it was also the inspiration for my [UI design](http://sachagreif.com/ebook) ebook.
+    #   url: http://getkandan.com/
+    #   date: 04/04/2012
+    - title: SachaGreif.com
+      description: The previous version of this site, a now-abandoned WordPress blog.
+      url: http://v3.sachagreif.com
+      date: 01/01/2012
     - title: Folyo
       description: My first “startup”. After many years trying (and failing) to make it work, sold the site to the talended [Workshop](http://letsworkshop.com/) crew.
       url: http://folyo.me

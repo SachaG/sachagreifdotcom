@@ -63,7 +63,7 @@ const Texture = d3Wrap({
         t = textures.paths()
           .d("crosses")
           .lighter()
-          .stroke("rgba(0,0,0,0.1)")
+          .stroke("rgba(255,255,255,0.1)")
           .size(20)
       break
     }
