@@ -2,13 +2,16 @@ about:
   title: About
   background: '#ffffff'
   text: '#333333'
-  description: >
-    I'm a designer, developer, and entrepreneur 
-    originally from Paris, France but now living in Osaka, Japan. 
-    After studying computer science and then becoming a freelance UI designer, 
-    I now spend my time working on personal projects, 
-    contributing to open source, and writing. 
-    [Say hello](mailto:hello@sachagreif.com).
+  # description: >
+  #   Designer, developer, and entrepreneur. 
+
+  #   I'm originally from Paris, France but these days I live in Osaka, Japan. 
+    
+  #   After studying computer science and teaching myself UI design, 
+  #   I now spend my time working on personal projects, 
+  #   contributing to open source, and writing. 
+    
+  #   [Say hello](mailto:hello@sachagreif.com).
   social: 
     - title: Twitter
       url: http://twitter.com/sachagreif
@@ -29,7 +32,7 @@ code:
   background: '#F5DECE'
   text: '#333333'
   description: >
-    The duct tape that keeps the Internet together.
+    The duct tape that keeps the world together.
   items: 
     - title: Telescope
       description: >
@@ -53,8 +56,11 @@ projects:
   title: Projects
   background: '#F5DECE'
   text: '#333333'
+  # description: >
+  #   Get a cool idea; spend way too much time on it; launch; rinse; repeat.
   description: >
-    Get a cool idea; spend way too much time on it; launch; rinse; repeat.
+    1. Get Idea; 2. Launch; 3. ???; 4. Profit.
+
   items: 
     - title: Sidebar
       description: >
@@ -79,34 +85,42 @@ writing:
   title: Writing
   background: '#E8C8ED'
   text: '#333333'
+  cta:
+    text: More On Medium
+    url: https://medium.com/@sachagreif
   description: >
     Like coding, but without all the errors.
   items:
+    - title: A Study Plan To Cure JavaScript Fatigue
+      description: >
+        My ultra-popular guide to learning JavaScript.
+      url: https://medium.freecodecamp.com/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.1f6bbq49y
+      date: 10/21/2016
     - title: What Kind Of Logo Do You Get For $5?
       description: >
-        I went on [Fiver](http://fiver.com) to see what kind of logo I could get for just $5. 
-        The results were pretty surprising (or maybe not…).
+        I went on [Fiver](http://fiver.com) to see what kind of logo you get for just $5. 
+        The results were surprising (or maybe not…).
       url: https://medium.com/swlh/in-the-past-couple-years-startups-have-started-realizing-that-good-design-can-make-the-difference-2fdeb90d390a#.bzorvva7p
+      date: 08/08/2014
     - title: The Product Spectrum
       description: >
         A blueprint for being an entrepreneur, from being a consultant to building consumer products.
       url: https://medium.com/my-thoughts-7/the-product-spectrum-bb2084b6f5b3#.i5o534cz6
+      date: 07/18/2014
     - title: The Spiderweb Strategy
       description: >
         How to organize your products in a way that makes sense (and makes cents, too).
       url: https://medium.com/@sachagreif/the-spiderweb-strategy-12ebd2f35595#.6qcqpo4xr
-    - title: A Study Plan To Cure JavaScript Fatigue
+      date: 08/17/2014
+    - title: 'Flat Pixels'
       description: >
-        
-      url: https://medium.freecodecamp.com/a-study-plan-to-cure-javascript-fatigue-8ad3a54f2eb1#.1f6bbq49y
-    - title: 'Flat Pixels: The Battle Between Flat Design & Skeuomorphism'
-      description: sdf
+        A long-form essay about the never-ending battle between flat design and skeuomorphism.
       url: http://sachagreif.com/flat-pixels/
-
+      date: 02/13/2013
     - title: Step by Step UI design
       description: My first ebook, a surprise success that set me on the path of the solo entrepreneur.
       url: http://sachagreif.com/ebook/
-
+      date: 04/04/2012
 # misc:
 #   title: Misc
 #   background: '#A3D2DF'
@@ -121,21 +135,26 @@ podcasts:
   background: '#333333'
   text: '#eeeeee'
   description: >
-    Hear me live.
+    Now featuring 20% more French accent.
   items: 
-    - title: React Native Radio
-      description: >
-        43 The State of JavaScript and React Native
-      url: https://devchat.tv/react-native-radio/43-the-state-of-javascript-and-react-native-with-sacha-greif/
-      date: 10/24/2016
     - title: UI Breakfast Podcast
       description: >
         Episode 40: Learning Through Projects
       url: http://uibreakfast.com/40-learning-projects-sacha-greif/
       date: 11/10/2016
+    - title: React Native Radio
+      description: >
+        43 The State of JavaScript and React Native
+      url: https://devchat.tv/react-native-radio/43-the-state-of-javascript-and-react-native-with-sacha-greif/
+      date: 10/24/2016
+    - title: Discover Meteor Podcast
+      description: >
+        5 episodes covering various aspects of Meteor
+      url: https://www.discovermeteor.com/podcast
+      date: 09/30/2015
     - title: Binpress Podcast
       description: >
-        Epsiode 39
+        Episode 39
       url: http://www.binpress.com/blog/2015/07/21/podcast-39-sacha-greif/
       date: 07/21/2015
     - title: Product People
@@ -143,11 +162,6 @@ podcasts:
         EP63: How things get popular
       url: http://www.productpeople.tv/63
       date: 08/15/2014
-    - title: The Industry
-      description: >
-        #10: Facebook IPO’d, The Toolbox launches, Parse for iOS and Android, and Say Hello to Octicons
-      url: http://theindustry.cc/2012/05/22/10-facebook-ipod-the-toolbox-launches-parse-for-ios-and-android-and-say-hello-to-octicons/
-      date: 05/22/2012
     - title: The Changelog
       description: >
         Discover Meteor.js
@@ -158,11 +172,11 @@ podcasts:
         Episode 12 - MeteorJS and Side Projects
       url: http://upfrontpodcast.com/2013/04/12/episode12.html
       date: 04/12/2013
-    - title: Discover Meteor Podcast
+    - title: The Industry
       description: >
-        5 episodes covering various aspects of Meteor
-      url: https://www.discovermeteor.com/podcast
-      date: 09/30/2015
+        #10: Facebook IPO’d, The Toolbox launches, Parse for iOS and Android, and Say Hello to Octicons
+      url: http://theindustry.cc/2012/05/22/10-facebook-ipod-the-toolbox-launches-parse-for-ios-and-android-and-say-hello-to-octicons/
+      date: 05/22/2012
 
 graveyard:
   title: Graveyard
@@ -171,19 +185,28 @@ graveyard:
   description: >
     You gotta learn to let them go.
   items: 
+    - title: Screenings
+      description: An attempt at building a directory of design talks. On life support due to a lack of updates. 
+      url: https://screenings.io
+      date: 07/01/2015
+    - title: BJJBot
+      description: A directory of Brazilian Jiu-Jitsu videos that never quite took off. 
+      url: http://bjjbot.com
+      date: 07/01/2015
+    - title: The Toolbox
+      description: A directory of design resources. The domain expired, and then got a second life thanks to a new owner.
+      url: http://thetoolbox.cc
+      date: 05/05/2012
+    - title: Kandan
+      description: I designed the UI for an open-source chat app. Besides being a fun project, it was also the inspiration for my [UI design](http://sachagreif.com/ebook) ebook.
+      url: http://getkandan.com/
+      date: 04/04/2012
+    - title: Folyo
+      description: My first “startup”. After many years trying (and failing) to make it work, sold the site to the talended [Workshop](http://letsworkshop.com/) crew.
+      url: http://folyo.me
+      date: 01/01/2011
     - title: Patternify
       description: >
         A simple pattern generation tool, and one of my first ever side projects. Still works!
       url: http://patternify.com/
-    - title: Folyo
-      description: My first “startup”. After many years trying (and failing) to make it work, sold the site to the talended [Workshop](http://letsworkshop.com/) crew.
-      url: http://folyo.me
-    - title: Screenings
-      description: An attempt at building a directory of design talks. On life support to a lack of updates. 
-      url: https://screenings.io
-    - title: The Toolbox
-      description: A directory of design resources. The domain expired, and then got a second life thanks to a new owner.
-      url: http://thetoolbox.cc
-    - title: Kandan
-      description: I designed the UI for an open-source chat app. Besides being a fun project, it was also the inspiration for my [UI design](http://sachagreif.com/ebook) ebook.
-      url: http://getkandan.com/
+      date: 01/01/2011

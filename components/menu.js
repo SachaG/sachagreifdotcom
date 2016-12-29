@@ -7,13 +7,13 @@ const Menu = () =>
 
   <MenuContainer>
 
-    <LogoBlock><a href="#"><Logo dangerouslySetInnerHTML={{__html: icons.sg}}/><span>Sacha Greif</span></a></LogoBlock>
+    <LogoBlock><a href="#section-1"><Logo dangerouslySetInnerHTML={{__html: icons.sg}}/><span>Sacha Greif</span></a></LogoBlock>
 
-    <MenuLink href="#"><span dangerouslySetInnerHTML={{__html: icons.smiley}}/></MenuLink>
-    <MenuLink href="#"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
-    <MenuLink href="#"><span dangerouslySetInnerHTML={{__html: icons.writing}}/></MenuLink>
-    <MenuLink href="#"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
-    <MenuLink href="#"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
+    <MenuLink href="#section-2"><span dangerouslySetInnerHTML={{__html: icons.smiley}}/></MenuLink>
+    <MenuLink href="#section-3"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
+    <MenuLink href="#section-4"><span dangerouslySetInnerHTML={{__html: icons.writing}}/></MenuLink>
+    <MenuLink href="#section-5"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
+    <MenuLink href="#section-0"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>
   </MenuContainer>
 
 export default Menu

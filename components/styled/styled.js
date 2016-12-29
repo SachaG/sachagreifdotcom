@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
 import styled from 'styled-components';
-import {orangered, black, white} from '../../data/colors.yaml'
+import {orangered, black, white, grey} from '../../data/colors.yaml'
 
 const doubleSpacing = "80px";
 const spacing = "40px";
@@ -12,6 +12,7 @@ const extralarge = "4em";
 const large = "1.7em";
 const medium = "1.3em";
 const small = "1em";
+const extrasmall = "0.85em";
 
 injectGlobal`
   *, *:before, *:after {
@@ -57,11 +58,13 @@ export const MenuContainer = styled.div`
   flex-direction: column;
   align-items: center;
   position: fixed;
+  position: absolute;
   z-index: 100
   top: ${spacing};
   left: 60px;
   a+a{
     margin-top: ${spacing};
+    margin-top: calc(100vh - 80px);
   }
   // &:before{
   //   display: block;
@@ -77,6 +80,7 @@ export const MenuContainer = styled.div`
 
 export const LogoBlock = styled.div`
   margin-bottom: ${spacing};
+  margin-bottom: calc(100vh - 120px);
   span {
     display: none;
   }
@@ -84,7 +88,7 @@ export const LogoBlock = styled.div`
 
 export const Logo = styled.h1`
   position: relative;
-  z-index: 110;
+  z-index: 120;
   width: 120px;
   height: 120px;
   background: ${black};
@@ -115,6 +119,10 @@ export const MenuLink = styled.a`
   // color: ${white};
   font-size: ${large};
   color: ${black};
+
+  background: ${orangered};
+  border-color: ${orangered};
+
   &:hover{
     background: ${orangered};
     border-color: ${orangered};
@@ -135,8 +143,9 @@ export const MenuLink = styled.a`
     width: 4px;
     margin-left: -2px;
     left: 50%;
-    top: calc(-${spacing} - 4px);
+    top: calc(-100vh + 80px - 4px);
     height: ${spacing};
+    height: calc(100vh - 80px);
   }
   span{
     display: block;
@@ -148,6 +157,9 @@ export const MenuLink = styled.a`
     path, polygon, polyline, rect, line{
       fill: ${black};
       stroke: ${black};
+
+      fill: ${white};
+      stroke: ${white};
     }
   }
 `
@@ -189,6 +201,33 @@ export const SectionContents = styled.div`
   height: 100%;
 `
 
+export const SectionTop = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: calc(${spacing} * 1.5);
+`
+
+export const SectionHeader = styled.div`
+
+`
+
+export const SectionCTA = styled.a`
+margin-top: ${halfSpacing};
+  border: 1px solid ${black};
+  display: block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: ${black};
+  font-weight: normal;
+  &:hover{
+    text-decoration: none;
+    background: ${orangered};
+    color: ${white};
+    border-color: ${orangered};
+  }
+`
+
 export const SectionTitle = styled.h2`
   font-size: ${extralarge};
   line-height: 1;
@@ -198,11 +237,13 @@ export const SectionTitle = styled.h2`
 export const AboutDescription = styled.div`
   font-size: ${large};
   margin-bottom: ${spacing};
+  p{
+    margin-bottom: ${spacing};
+  }
 `
 
 export const SectionDescription = styled.div`
   font-size: ${medium};
-  margin-bottom: ${spacing};
 `
 
 export const SocialLinks = styled.div`
@@ -252,11 +293,16 @@ export const ItemDescription = styled.div`
     margin-bottom: 0px;
   }
 `
+export const ItemDate = styled.span`
+  color: ${grey};
+  font-weight: normal;
+`
 
 export const FooterContainer = styled.div`
   text-align: center;
   padding: ${halfSpacing} 0;
-  // background: ${black};
-  // color: ${white};
+  background: ${black};
+  color: ${white};
+  font-size: ${extrasmall};
   // border-top: 1px dashed ${black};
 `

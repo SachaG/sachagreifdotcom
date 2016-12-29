@@ -2,11 +2,16 @@ import React from 'react'
 import MarkdownIt from 'markdown-it'
 const md = new MarkdownIt()
 
-import {ItemTitle, ItemDescription, ItemBlock} from './styled/styled.js';
+import moment from 'moment'
 
-const Item = ({title, description, url}) => 
+import {ItemTitle, ItemDescription, ItemBlock, ItemDate} from './styled/styled.js';
+
+const Item = ({title, description, url, date}) => 
   <ItemBlock className="item">
-    <ItemTitle className="item-title"><a href={url}>{title}</a></ItemTitle>
+    <ItemTitle className="item-title">
+      <a href={url}>{title}</a> 
+      {date ? <ItemDate> {moment(date, '').year()}</ItemDate> : null}
+    </ItemTitle>
     {description ? <ItemDescription className="item-description" dangerouslySetInnerHTML={{ __html: md.render(description) }} /> : null }
   </ItemBlock>
 
