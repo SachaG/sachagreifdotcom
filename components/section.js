@@ -20,7 +20,7 @@ const Section = ({title, description, items, index, background, text, cta}) =>
     
           <SectionTitle className="section-title">{title}</SectionTitle>
         
-          {description ? <SectionDescription className="item-description" dangerouslySetInnerHTML={{ __html: md.render(description) }} /> : null }
+          {description ? <SectionDescription className="item-description">{description}</SectionDescription> : null }
     
         </SectionHeader>
         {cta ? <SectionCTA href={cta.url}>{cta.text} ></SectionCTA> : null}

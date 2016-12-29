@@ -77,7 +77,7 @@ const Texture = d3Wrap({
       .attr("width", 3000)
       .style("fill", t.url())
 
-  },
+  }
 })
 
 export default Texture

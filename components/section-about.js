@@ -10,13 +10,10 @@ import icons from '../data/icons.yaml'
 import Texture from './texture.js'
 
 const contents = `
-  Designer, developer, and entrepreneur. 
+  
+  I'm **Sacha Greif**, a designer, developer, and entrepreneur. 
 
   I'm originally from Paris, France but these days I live in Osaka, Japan. 
-
-  After studying computer science and working as a UI designer, 
-  I now spend my time working on personal projects, 
-  contributing to open source, and writing. 
 
   [Say hello](mailto:hello@sachagreif.com), or keep scrolling.
 `

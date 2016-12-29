@@ -1,18 +1,29 @@
-import { injectGlobal } from 'styled-components';
+import { injectGlobal, css } from 'styled-components';
 
 import styled from 'styled-components';
 import {orangered, black, white, grey} from '../../data/colors.yaml'
+import fonts from '../../data/fontsizes.yaml'
 
 const doubleSpacing = "80px";
 const spacing = "40px";
 const halfSpacing = "20px";
 const quarterSpacing = "10px";
 
-const extralarge = "4em";
-const large = "1.7em";
-const medium = "1.3em";
-const small = "1em";
-const extrasmall = "0.85em";
+const small = (...args) => css`
+  @media screen and (max-width: 500px) {
+    ${ css(...args) }
+  }
+`
+const medium = (...args) => css`
+  @media screen and (min-width: 501px) and (max-width: 1200px) {
+    ${ css(...args) }
+  }
+`
+const large = (...args) => css`
+  @media screen and (min-width: 1201px) {
+    ${ css(...args) }
+  }
+`
 
 injectGlobal`
   *, *:before, *:after {
@@ -54,7 +65,10 @@ export const Layout = styled.div`
 `
 
 export const MenuContainer = styled.div`
-  display: flex;
+  display: none;
+  ${large`
+    display: flex;
+  `}
   flex-direction: column;
   align-items: center;
   position: fixed;
@@ -94,7 +108,7 @@ export const Logo = styled.h1`
   background: ${black};
   // background: ${orangered};
   // border: 4px solid ${black};
-  padding: 5px;
+  padding: 20px;
   border-radius: 100%;
   margin: 0;
   path{
@@ -117,7 +131,7 @@ export const MenuLink = styled.a`
   width: 80px;
   height: 80px;
   // color: ${white};
-  font-size: ${large};
+  font-size: ${fonts.large};
   color: ${black};
 
   background: ${orangered};
@@ -165,9 +179,19 @@ export const MenuLink = styled.a`
 `
 
 export const SectionBlock = styled.section`
-  padding: ${spacing} 240px ${spacing} 360px;  
-  padding: 0 120px 0 240px;  
-  height: 100vh;
+  // padding: ${spacing} 240px ${spacing} 360px;  
+  ${small`
+    padding: 0 10px 0 10px;
+  `}
+  ${medium`
+    padding: 0 80px 0 80px;
+  `}
+  ${large`
+    padding: 0 120px 0 240px;
+    height: 100vh;
+  `}
+
+  // height: 1px;
   position: relative;
   // border-bottom: 1px dotted #ccc;
   // background: ${props => `rgba(0,0,0,${0+props.index/30})`};
@@ -195,12 +219,25 @@ export const SectionContents = styled.div`
   position: relative;
   z-index: 10;
   background: ${white};
-  padding: ${spacing} ${doubleSpacing};
+  ${small`
+    padding: ${halfSpacing} ${halfSpacing};
+  `}
+  ${medium`
+    padding: ${halfSpacing} ${halfSpacing};
+  `}
+  ${large`
+    padding: ${spacing} ${doubleSpacing};
+  `}
   height: 100%;
 `
 
 export const SectionTop = styled.div`
-  display: flex;
+  ${medium`
+    display: flex;
+  `}
+  ${large`
+    display: flex;
+  `}
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: calc(${spacing} * 1.5);
@@ -211,29 +248,52 @@ export const SectionHeader = styled.div`
 `
 
 export const SectionCTA = styled.a`
-margin-top: ${halfSpacing};
+  margin-top: ${halfSpacing};
   border: 1px solid ${black};
   display: block;
   padding: 10px 20px;
   border-radius: 3px;
   color: ${black};
   font-weight: normal;
+  box-shadow: 4px 4px ${black};
   &:hover{
     text-decoration: none;
     background: ${orangered};
     color: ${white};
     border-color: ${orangered};
   }
+  &:active{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 2px 2px ${black};
+  }
 `
 
 export const SectionTitle = styled.h2`
-  font-size: ${extralarge};
+  ${small`
+    font-size: ${fonts.large};
+  `}
+  ${medium`
+    font-size: ${fonts.large};
+  `}
+  ${large`
+    font-size: ${fonts.extralarge};
+  `}
   line-height: 1;
   margin-bottom: ${quarterSpacing};
 `
 
 export const AboutDescription = styled.div`
-  font-size: ${large};
+  ${small`
+    font-size: ${fonts.medium};
+  `}
+  ${medium`
+    font-size: ${fonts.large};
+  `}
+  ${large`
+    font-size: ${fonts.large};
+  `}
   margin-bottom: ${spacing};
   p{
     margin-bottom: ${spacing};
@@ -249,7 +309,15 @@ export const AboutLink = styled.a`
 `
 
 export const SectionDescription = styled.div`
-  font-size: ${medium};
+  ${small`
+    font-size: ${fonts.small};
+  `}
+  ${medium`
+    font-size: ${fonts.small};
+  `}
+  ${large`
+    font-size: ${fonts.medium};
+  `}
 `
 
 export const SocialLinks = styled.div`
@@ -277,25 +345,29 @@ export const SocialIcon = styled.div`
 export const Items = styled.div`
   display: flex;
   flex-wrap: wrap;
-  > div {
-    width: calc( ( 100% - ${doubleSpacing} ) / 2 );
-    margin-bottom: ${spacing};
+  > div{
+    margin-bottom: ${spacing};  
   }
-  > div:nth-child(2n) {
-    margin-left: ${doubleSpacing};
-  }
+  ${large`
+    > div {
+      width: calc( ( 100% - ${doubleSpacing} ) / 2 );
+    }
+    > div:nth-child(2n) {
+      margin-left: ${doubleSpacing};
+    }
+  `}
 `
 
 export const ItemBlock = styled.div`
 `
 
 export const ItemTitle = styled.h3`
-  font-size: ${medium};
+  font-size: ${fonts.medium};
   margin-bottom: ${quarterSpacing};
 `
 
 export const ItemDescription = styled.div`
-  font-size: ${small};
+  font-size: ${fonts.small};
   p{
     margin-bottom: 0px;
   }
@@ -310,6 +382,6 @@ export const FooterContainer = styled.div`
   padding: ${halfSpacing} 0;
   background: ${black};
   color: ${white};
-  font-size: ${extrasmall};
+  font-size: ${fonts.extrasmall};
   // border-top: 1px dashed ${black};
 `
