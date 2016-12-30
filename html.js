@@ -1,7 +1,9 @@
-  import React from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 
 import { prefixLink } from 'gatsby-helpers'
+
+import styleSheet from 'styled-components/lib/models/StyleSheet';
 
 const BUILD_TIME = new Date().getTime()
 
@@ -13,6 +15,10 @@ module.exports = React.createClass({
   },
   render () {
     const head = Helmet.rewind()
+
+    // styled-components
+    console.log(styleSheet.rules())
+    const styles = styleSheet.rules().map(rule => rule.cssText).join('\n');
 
     let css
     if (process.env.NODE_ENV === 'production') {
@@ -31,6 +37,7 @@ module.exports = React.createClass({
           {head.title.toComponent()}
           {head.meta.toComponent()}
           {css}
+          <style dangerouslySetInnerHTML={{ __html: styles }} />
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />

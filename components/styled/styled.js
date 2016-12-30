@@ -4,10 +4,18 @@ import styled from 'styled-components';
 import {orangered, black, white, grey} from '../../data/colors.yaml'
 import fonts from '../../data/fontsizes.yaml'
 
-const doubleSpacing = "80px";
-const spacing = "40px";
-const halfSpacing = "20px";
-const quarterSpacing = "10px";
+/* 
+
+Globals
+
+*/
+
+const spacing = {
+  quarter: "10px",
+  half: "20px",
+  single: "40px",
+  double: "80px"
+}
 
 const small = (...args) => css`
   @media screen and (max-width: 500px) {
@@ -26,6 +34,9 @@ const large = (...args) => css`
 `
 
 injectGlobal`
+  
+  @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700');
+
   *, *:before, *:after {
     box-sizing: border-box;
   }
@@ -39,7 +50,7 @@ injectGlobal`
   }
 
   h1, h2, h3, h4, h5, h6{
-    margin: 0 0 ${spacing} 0;
+    margin: 0 0 ${spacing.single} 0;
     line-height: 1.3;
   }
 
@@ -64,6 +75,135 @@ export const Layout = styled.div`
   position: relative;
 `
 
+
+/*
+
+Sections
+
+*/
+
+export const SectionBlock = styled.section`
+  // padding: ${spacing.single} 240px ${spacing.single} 360px;  
+  ${small`
+    padding: 0 10px 0 10px;
+  `}
+  ${medium`
+    padding: 0 80px 0 80px;
+  `}
+  ${large`
+    padding: 0 120px 0 240px;
+    height: 100vh;
+  `}
+
+  // height: 1px;
+  position: relative;
+  // border-bottom: 1px dotted #ccc;
+  // background: ${props => `rgba(0,0,0,${0+props.index/30})`};
+  // svg{
+  //   path{
+  //     fill: #ffffff;
+  //   }
+  // }
+
+  .svg-background{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+`
+
+export const SectionContents = styled.div`
+  position: relative;
+  z-index: 10;
+  background: ${white};
+  ${small`
+    padding: ${spacing.half} ${spacing.half};
+  `}
+  ${medium`
+    padding: ${spacing.half} ${spacing.half};
+  `}
+  ${large`
+    padding: ${spacing.single} ${spacing.double};
+  `}
+  height: 100%;
+`
+
+export const SectionTop = styled.div`
+  ${medium`
+    display: flex;
+  `}
+  ${large`
+    display: flex;
+  `}
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: calc(${spacing.single} * 1.5);
+`
+
+export const SectionHeader = styled.div`
+
+`
+
+export const SectionCTA = styled.a`
+  margin-top: ${spacing.half};
+  border: 1px solid ${black};
+  display: block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: ${black};
+  font-weight: normal;
+  box-shadow: 4px 4px ${black};
+  &:hover{
+    text-decoration: none;
+    background: ${orangered};
+    color: ${white};
+    border-color: ${orangered};
+  }
+  &:active{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    box-shadow: 2px 2px ${black};
+  }
+`
+
+export const SectionTitle = styled.h2`
+  ${small`
+    font-size: ${fonts.large};
+  `}
+  ${medium`
+    font-size: ${fonts.large};
+  `}
+  ${large`
+    font-size: ${fonts.extralarge};
+  `}
+  line-height: 1;
+  margin-bottom: ${spacing.quarter};
+`
+
+export const SectionDescription = styled.div`
+  ${small`
+    font-size: ${fonts.small};
+  `}
+  ${medium`
+    font-size: ${fonts.small};
+  `}
+  ${large`
+    font-size: ${fonts.medium};
+  `}
+`
+
+/* 
+
+Menu
+
+*/
+
 export const MenuContainer = styled.div`
   display: none;
   ${large`
@@ -74,10 +214,10 @@ export const MenuContainer = styled.div`
   position: fixed;
   position: absolute;
   z-index: 100
-  top: ${spacing};
+  top: ${spacing.single};
   left: 60px;
   a+a{
-    margin-top: ${spacing};
+    margin-top: ${spacing.single};
     margin-top: calc(100vh - 80px);
   }
   // &:before{
@@ -93,7 +233,7 @@ export const MenuContainer = styled.div`
 `
 
 export const LogoBlock = styled.div`
-  margin-bottom: ${spacing};
+  margin-bottom: ${spacing.single};
   margin-bottom: calc(100vh - 120px);
   span {
     display: none;
@@ -142,12 +282,12 @@ export const MenuLink = styled.a`
     border-color: ${orangered};
     color: ${white};
     text-decoration: none;
-    svg{
-      path, polygon, polyline, rect, line{
-        fill: ${white};
-        stroke: ${white};
-      }
-    }
+    // svg{
+    //   path, polygon, polyline, rect, line{
+    //     fill: ${white};
+    //     stroke: ${white};
+    //   }
+    // }
   }
   &:before{
     display: block;
@@ -158,7 +298,7 @@ export const MenuLink = styled.a`
     margin-left: -2px;
     left: 50%;
     top: calc(-100vh + 80px - 4px);
-    height: ${spacing};
+    height: ${spacing.single};
     height: calc(100vh - 80px);
   }
   span{
@@ -174,115 +314,17 @@ export const MenuLink = styled.a`
 
       fill: ${white};
       stroke: ${white};
+
+      fill: transparent;
     }
   }
 `
 
-export const SectionBlock = styled.section`
-  // padding: ${spacing} 240px ${spacing} 360px;  
-  ${small`
-    padding: 0 10px 0 10px;
-  `}
-  ${medium`
-    padding: 0 80px 0 80px;
-  `}
-  ${large`
-    padding: 0 120px 0 240px;
-    height: 100vh;
-  `}
+/*
 
-  // height: 1px;
-  position: relative;
-  // border-bottom: 1px dotted #ccc;
-  // background: ${props => `rgba(0,0,0,${0+props.index/30})`};
-  // svg{
-  //   path{
-  //     fill: #ffffff;
-  //   }
-  // }
+About
 
-  .svg-background{
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-`
-
-
-
-export const SectionContents = styled.div`
-  position: relative;
-  z-index: 10;
-  background: ${white};
-  ${small`
-    padding: ${halfSpacing} ${halfSpacing};
-  `}
-  ${medium`
-    padding: ${halfSpacing} ${halfSpacing};
-  `}
-  ${large`
-    padding: ${spacing} ${doubleSpacing};
-  `}
-  height: 100%;
-`
-
-export const SectionTop = styled.div`
-  ${medium`
-    display: flex;
-  `}
-  ${large`
-    display: flex;
-  `}
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: calc(${spacing} * 1.5);
-`
-
-export const SectionHeader = styled.div`
-
-`
-
-export const SectionCTA = styled.a`
-  margin-top: ${halfSpacing};
-  border: 1px solid ${black};
-  display: block;
-  padding: 10px 20px;
-  border-radius: 3px;
-  color: ${black};
-  font-weight: normal;
-  box-shadow: 4px 4px ${black};
-  &:hover{
-    text-decoration: none;
-    background: ${orangered};
-    color: ${white};
-    border-color: ${orangered};
-  }
-  &:active{
-    position: relative;
-    top: 2px;
-    left: 2px;
-    box-shadow: 2px 2px ${black};
-  }
-`
-
-export const SectionTitle = styled.h2`
-  ${small`
-    font-size: ${fonts.large};
-  `}
-  ${medium`
-    font-size: ${fonts.large};
-  `}
-  ${large`
-    font-size: ${fonts.extralarge};
-  `}
-  line-height: 1;
-  margin-bottom: ${quarterSpacing};
-`
+*/
 
 export const AboutDescription = styled.div`
   ${small`
@@ -294,37 +336,25 @@ export const AboutDescription = styled.div`
   ${large`
     font-size: ${fonts.large};
   `}
-  margin-bottom: ${spacing};
+  margin-bottom: ${spacing.single};
   p{
-    margin-bottom: ${spacing};
+    margin-bottom: ${spacing.single};
   }
 `
 
 export const AboutLinksBlock = styled.div`
-  margin-bottom: ${spacing};
+  margin-bottom: ${spacing.single};
 `
 
 export const AboutLink = styled.a`
   display: block;
 `
 
-export const SectionDescription = styled.div`
-  ${small`
-    font-size: ${fonts.small};
-  `}
-  ${medium`
-    font-size: ${fonts.small};
-  `}
-  ${large`
-    font-size: ${fonts.medium};
-  `}
-`
-
 export const SocialLinks = styled.div`
   display: flex;
-  margin-bottom: ${spacing};
+  margin-bottom: ${spacing.single};
   > * + * {
-    margin-left: ${halfSpacing};
+    margin-left: ${spacing.half};
   }
 `
 
@@ -342,18 +372,24 @@ export const SocialIcon = styled.div`
   }
 `
 
+/*
+
+Items
+
+*/
+
 export const Items = styled.div`
   display: flex;
   flex-wrap: wrap;
   > div{
-    margin-bottom: ${spacing};  
+    margin-bottom: ${spacing.single};  
   }
   ${large`
     > div {
-      width: calc( ( 100% - ${doubleSpacing} ) / 2 );
+      width: calc( ( 100% - ${spacing.double} ) / 2 );
     }
     > div:nth-child(2n) {
-      margin-left: ${doubleSpacing};
+      margin-left: ${spacing.double};
     }
   `}
 `
@@ -363,7 +399,7 @@ export const ItemBlock = styled.div`
 
 export const ItemTitle = styled.h3`
   font-size: ${fonts.medium};
-  margin-bottom: ${quarterSpacing};
+  margin-bottom: ${spacing.quarter};
 `
 
 export const ItemDescription = styled.div`
@@ -377,9 +413,15 @@ export const ItemDate = styled.span`
   font-weight: normal;
 `
 
+/*
+
+Footer
+
+*/
+
 export const FooterContainer = styled.div`
   text-align: center;
-  padding: ${halfSpacing} 0;
+  padding: ${spacing.half} 0;
   background: ${black};
   color: ${white};
   font-size: ${fonts.extrasmall};

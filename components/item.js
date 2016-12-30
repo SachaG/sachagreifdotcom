@@ -10,7 +10,7 @@ const Item = ({title, description, url, date}) =>
   <ItemBlock className="item">
     <ItemTitle className="item-title">
       <a href={url}>{title}</a> 
-      {date ? <ItemDate> {moment(date, '').year()}</ItemDate> : null}
+      {date ? <ItemDate> {moment(date, 'MM/DD/YYYY').year()}</ItemDate> : null}
     </ItemTitle>
     {description ? <ItemDescription className="item-description" dangerouslySetInnerHTML={{ __html: md.render(description) }} /> : null }
   </ItemBlock>
