@@ -21,7 +21,6 @@ const Texture = d3Wrap({
           .stroke("rgba(0,0,0,0.13)")
           .size(20)
           .strokeWidth(1)
-
       break
 
       case 1:
@@ -76,6 +75,35 @@ const Texture = d3Wrap({
       .attr("height", 3000)
       .attr("width", 3000)
       .style("fill", t.url())
+
+    //   let t1 = textures.circles()
+    //       .radius(4)
+    //       .fill("transparent")
+    //       .stroke("rgba(0,0,0,0.13)")
+    //       .size(20)
+    //       .strokeWidth(1)
+    //   let t2 = textures.circles()
+    //       .radius(8)
+    //       .fill("transparent")
+    //       .stroke("rgba(0,0,0,0.13)")
+    //       .size(20)
+    //       .strokeWidth(1)
+    // d3svg.call(t1);
+    // d3svg.call(t2);
+
+    // d3svg.append("rect")
+    //   .attr("x", 4)
+    //   .attr("y", 4)
+    //   .attr("height", 3000)
+    //   .attr("width", 3000)
+    //   .style("fill", t1.url())
+
+    // d3svg.append("rect")
+    //   .attr("x", 4)
+    //   .attr("y", 4)
+    //   .attr("height", 3000)
+    //   .attr("width", 3000)
+    //   .style("fill", t2.url())
 
   }
 })

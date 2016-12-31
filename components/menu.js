@@ -1,13 +1,14 @@
 import React from 'react'
-import {MenuContainer, LogoBlock, Logo, MenuLink} from './styled/styled.js';
+import { MenuContainer, MenuLink } from './styled/styled.js';
 
 import icons from '../data/icons.yaml'
+import Logo from './logo.js'
 
 const Menu = () => 
 
   <MenuContainer>
 
-    <LogoBlock><a href="#section-1"><Logo dangerouslySetInnerHTML={{__html: icons.sg}}/><span>Sacha Greif</span></a></LogoBlock>
+    <Logo />
 
     <MenuLink href="#section-2"><span dangerouslySetInnerHTML={{__html: icons.code}}/></MenuLink>
     <MenuLink href="#section-3"><span dangerouslySetInnerHTML={{__html: icons.robot}}/></MenuLink>

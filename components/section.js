@@ -20,14 +20,14 @@ const Section = ({title, description, items, index, background, text, cta}) =>
     
           <SectionTitle className="section-title">{title}</SectionTitle>
         
-          {description ? <SectionDescription className="item-description">{description}</SectionDescription> : null }
+          {description ? <SectionDescription dangerouslySetInnerHTML={{ __html: md.render(description) }} /> : null }
     
         </SectionHeader>
         {cta ? <SectionCTA href={cta.url}>{cta.text} ></SectionCTA> : null}
       </SectionTop>
       <Items>
 
-        {items.map((item, index) => <Item {...item} key={index}/>)}
+        {items ? items.map((item, index) => <Item {...item} key={index}/>) : null}
       
       </Items>
 

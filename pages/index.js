@@ -19,7 +19,7 @@ export default class Index extends React.Component {
         <Helmet
           title={config.siteTitle}
           meta={[
-            {"name": "description", "content": "Sample"},
+            {"name": "description", "content": "Sacha Greif: Designer, Developer, Entrepreneur"},
             {"name": "keywords", "content": "sample, something"},
           ]}
         />

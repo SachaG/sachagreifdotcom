@@ -17,8 +17,7 @@ module.exports = React.createClass({
     const head = Helmet.rewind()
 
     // styled-components
-    console.log(styleSheet.rules())
-    const styles = styleSheet.rules().map(rule => rule.cssText).join('\n');
+    const styles = styleSheet.sheet ? styleSheet.rules().map(rule => rule.cssText).join('\n') : null;
 
     let css
     if (process.env.NODE_ENV === 'production') {
@@ -37,7 +36,7 @@ module.exports = React.createClass({
           {head.title.toComponent()}
           {head.meta.toComponent()}
           {css}
-          <style dangerouslySetInnerHTML={{ __html: styles }} />
+          {!!styles ? <style dangerouslySetInnerHTML={{ __html: styles }} /> : null}
         </head>
         <body>
           <div id="react-mount" dangerouslySetInnerHTML={{ __html: this.props.body }} />

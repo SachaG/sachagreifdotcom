@@ -196,6 +196,9 @@ export const SectionDescription = styled.div`
   ${large`
     font-size: ${fonts.medium};
   `}
+  p{
+    margin-bottom: ${spacing.half};
+  }
 `
 
 /* 
@@ -240,7 +243,7 @@ export const LogoBlock = styled.div`
   }
 `
 
-export const Logo = styled.h1`
+export const LogoImage = styled.h1`
   position: relative;
   z-index: 120;
   width: 120px;
