@@ -1,0 +1,438 @@
+<!doctype html>
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Flat Pixels: The Battle Between Flat Design And Skeuomorphism</title>
+    <meta content='An essay about recent design trends.' name='description'>
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta content='width=device-width, target-densitydpi=160dpi, initial-scale=1.0' name='viewport'>
+    <meta content='True' name='HandheldFriendly'>
+    <meta content='320' name='MobileOptimized'>
+    <link href='stylesheets/screen.css' rel='stylesheet'>
+    <script src='javascripts/libs/modernizr-2.5.3.min.js'></script>
+    <script type="text/javascript" src="//use.typekit.net/hfk4atd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  </head>
+  <body class='clearfix'>
+    <div class='container toolbar-container'>
+      <div class='toolbar'>
+        <ul>
+          <li class='twitter'>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="SachaGreif" data-dnt="true">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </li>
+          <li class='facebook'>
+            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+          </li>
+          <li class='googleplus'>
+            <div class="g-plusone" data-size="medium"></div>
+          </li>
+          <li class='instapaper'>
+            <iframe border="0" scrolling="no" width="78" height="17" allowtransparency="true" frameborder="0"
+            style="margin-bottom: -3px; z-index: 1338; border: 0px; background-color: transparent; overflow: hidden;"
+            src="http://www.instapaper.com/e2?url=____&title=____&description=____"
+            ></iframe>
+          </li>
+          <li class='buffer'>
+            <a href="http://bufferapp.com/add" class="buffer-add-button" data-count="horizontal" data-via="SachaGreif" >Buffer</a><script type="text/javascript" src="http://static.bufferapp.com/js/button.js"></script>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='container instapaper_body'>
+      <header class='block' id='header' role='banner'>
+        <h1>
+          <img alt='Flat Pixels: The Battle Between Flat Design And Skeuomorphism' class='desktop' src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/flatpixels2.png'>
+          <img alt='Flat Pixels: The Battle Between Flat Design And Skeuomorphism' class='mobile' src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/flatpixels-mobile.png'>
+        </h1>
+      </header>
+      <article class='block' id='content' role='main'>
+        <div class='ebook'>
+          <a class='tagline' href='http://www.amazon.com/Flat-Pixels-Between-Skeuomorphism-ebook/dp/B00BCSBAWG/ref=sr_1_10'>
+            Get the Kindle version:
+          </a>
+          <a class='kindle' href='http://www.amazon.com/Flat-Pixels-Between-Skeuomorphism-ebook/dp/B00BCSBAWG/ref=sr_1_10'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/kindle.png'>
+          </a>
+        </div>
+        <section id='introduction'>
+          <p>If you're paying attention to what's going on in the design world, you've probably noticed the ongoing debate around <strong>skeuomorphism</strong> vs <strong>flat design</strong>.</p>
+          <p>So here's a quick test. Which of these two calculators feature a skeuomorphic design?</p>
+          <div class='image wide'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/calculators1.png'>
+            <p class='caption'>Which of these two apps is skeuomorphic?</p>
+          </div>
+          <p>If you answered "skeuo<em>what</em>?" you obviously haven't read any of the approximately 5000 blog posts covering the topic that have come out in recent months, so here's your chance to catch up.</p>
+          <p>But if you answered "the app on the right, of course!" then I'm sorry to say you got it wrong too! You see, this was a trick question.</p>
+          <p>The correct answer is that <em>both</em> apps are skeuomorphs. Read on to find out why.</p>
+        </section>
+        <section id='defining_skeuomorphism'>
+          <h2>Defining Skeuomorphism</h2>
+          <!-- .image.push -->
+          <!-- %img{:src => "http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/apple-iphone-voice-memos.png"} -->
+          <!-- %p.caption Apple’s Voice Memo App features a microphone image in the center even though the phone’s actual microphone is placed at the bottom of the device. -->
+          <p>This obscure word describes the way designs often borrow a particular feature from the past, even when the functional need for it is gone. Examples include pre-recorded shutter noises on smartphones to remind us of film cameras, or calendar apps that feature torn paper and metal rings.</p>
+          <p>Or, as Wikipedia tells us <sup><a href="#wikipedia-skeuomorphism">[1]</a></sup>:</p>
+          <blockquote>A skeuomorph is a physical ornament or design on an object copied from a form of the object when made from another material or by other techniques.</blockquote>
+          <p>While Wikipedia only mentions "physical ornaments", the digital world has seen skeuomorphism popularized in the past couple years mainly thanks to the recent iOS-inspired trend of rich textures and life-like controls.</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/windows-rt.png'>
+            <p class='caption'>Microsoft's "Metro" aesthetic, as seen in Windows RT</p>
+          </div>
+          <p>By opposition, the other side of the coin would be the newly popular "flat style", of which Microsoft's Metro UI is probably the main example. Flat Style embraces visual minimalism, eschewing textures and lighting effects for simple shapes and flat colors.</p>
+        </section>
+        <section id='skeuomorphism_or_realism'>
+          <h2>Skeuomorphism or Realism?</h2>
+          <p>Although to be more precise, this trend is not always about <em>skeuomorphism</em> – which implies a connection to a past incarnation of a similar design – but rather often about <em>realism</em> <sup><a href="#sacha-1">[2]</a></sup>: a purely visual style that tries to imitate real-world materials and textures, exemplified by Apple's tacky over-use of leather textures in some of their own apps.</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/calculators1.png'>
+            <p class='caption'>Both apps imitate the layout of a real-world calculator, so they're both skeuomorphs.</p>
+          </div>
+          <p>So going back to our previous example, both calculator apps were skeuomorphs, since they both copy the layout of a physical calculator. Although only the one on the right goes after visual realism as well.</p>
+          <p>Of course, the two often go hand in hand: skeuomorphic designs tend to look realistic (to make the connection with the original object clear), and realistic designs tend to be skeuomorphic (otherwise the realism would look out of place).</p>
+          <p>So while realism is a purely visual style, skeuomorphism affects a design at a much deeper level. But there's nothing wrong with either technique in themselves. As Loren Brichter (of Tweetie & Letterpress fame) pointed out in a recent interview <sup><a href="#loren-brichter">[3]</a></sup>:</p>
+          <blockquote>Skeuomorphism is [not] bad at all. We need that to interact with devices in a human way. Gaudy textures are just a visual design problem… I hope they tone it down."</blockquote>
+          <p>So if the problem is "gaudy textures", why did we end up with them in the first place? And how come we're suddenly getting fed up with them?</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/find-my-friends.png'>
+            <p class='caption'>Find My Friends: the poster boy for gaudy textures.</p>
+          </div>
+        </section>
+        <section id='the_iphone'>
+          <h2>It All Started With The iPhone</h2>
+          <p>I believe both the realism trend and the recent backlash against it can be traced back to a single product: <strong>the iPhone</strong>.</p>
+          <p>Before the iPhone, realism in user interface was unusual, with the exception of video games. In order to preserve immersion <sup><a href="#anthony-stonehouse">[4]</a></sup>, game designers had long began to craft their user interfaces out of wood, metal, and stone. Diablo 2 for example featured stone-wrought controls and glass energy meters supported by gothic statues.</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/diablo2-ui.jpg'>
+            <p class='caption'>Diablo 2’s user interface, like many video games, featured realistic (but not skeuomorphic) textures. As well as walking cows, apparently.</p>
+          </div>
+          <p>But in more “serious” contexts, realism was still very limited. One notable exception being the glass “Web 2.0 style” buttons inherited from the early versions of Mac OS X.</p>
+          <p>You could say these admittedly gaudy buttons were the first warning signs of Steve Jobs’ infatuation with realism (as proof for Jobs’ love affair with real-world materials, Fast Company reported that iCal’s leather stitching is based on Jobs’ own private jet’s chairs <sup><a href="#fast-company">[5]</a></sup>).</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/macosx-ui.png'>
+            <p class='caption'>Realism in early OS X versions meant glass everywhere</p>
+          </div>
+          <p>With iOS, Apple decided to embrace realism even more. But I believe they had a couple good reasons to do so.</p>
+          <div class='image push'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/ibooks.jpg'>
+            <p class='caption'>iBooks’ page-turning animation: tacky now, but revolutionary at launch</p>
+          </div>
+          <p>First of all, you can't ignore the visual appeal of realism: sure, those leather textures and page turn animations feel tacky now after we've been stuck with them for the past couple years, but when the iPhone was first revealed nobody had seen such visual richness in an operating system’s user interface before (let alone on a phone).</p>
+          <p>And don't forget the iPhone was a completely new kind of device to a lot of its users. Realism was a way to link the future with the past, and make people feel at ease with their new device. Since the calendar looked like one, it was obvious at first glance what its function was – even if it later turned out that no amount of swiping would turn the virtual pages, since they responded to a button instead.</p>
+        </section>
+        <section id='argument_for_realism'>
+          <h2>The Argument for Realism</h2>
+          <p>A medium's technical constraints will always influence the art it can produce, and this is as true for smartphones as it is for oil painting. Indeed, there are some specific practical factors that made realism work on the iPhone.</p>
+          <p>For starters, on a smartphone –unlike on a desktop computer– apps take up the entirety of the screen. You never display two apps next to one another, which means you can have two apps with very different visual styles without risking incoherence.</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/settings-weather.png'>
+            <p class='caption'>Settings and Weather: same platform, same maker, yet completely different styles.</p>
+          </div>
+          <p>So while Apple smartly provided a great set of default system UI widgets to use in iOS, it also made clear from the start that iPhone apps did not necessarily need to adhere to their visual style.</p>
+          <p>Also, the iPhone was designed to be used with your finger, rather than with a more precise stylus. Apple designers quickly found out that this meant touch target couldn't be smaller than a certain size (Apple's Human Interface Guidelines recommend at least 44 by 44 pixels).</p>
+          <p>Previous smartphones' cramped lists and small icons made it all but impossible to get fancy with graphics: you simply didn't have any room for it. The iPhone's large touch targets requirements opened the door to showing less on the screen, but doing more with it.</p>
+          <p>These reasons certainly contributed to Apple's initial design direction, and once the tone was set designers quickly embraced it.</p>
+          <p>After all, the web can be a frustrating platform to design for, what with its multiple browsers, resizable windows, and slow loading times. Every designer has known the pain of coming up with a beautiful mock-up in Photoshop, only to find out that it will never look as good in the browser.</p>
+          <p>With the iPhone, designers were suddenly offered a platform with a single rendering engine, fixed dimensions, and a much higher limit on asset weight (not to mention a great display with vibrant colors). Is it any wonder some of us went a little overboard?</p>
+          <p>Of course, <em>game</em> designers have had access to such platforms (i.e. game consoles) for years, and it's no coincidence that games often feature realistic user interfaces.</p>
+          <p>It's also worth pointing out that the fixed dimensions that make using bitmap assets so much easier are not a feature of every smartphone OS. For example, Android apps are supposed to adapt to a variety of displays and screen sizes, making designing graphically-rich apps much more challenging <sup><a href="#sebastian-de-with">[6]</a></sup>.</p>
+          <p>Yet although smartphones brought us realism, they are now also playing their part in ushering in its successor, as we'll soon see.</p>
+        </section>
+        <section id='problem_with_skeuomorphism'>
+          <h2>The Problem With Skeuomorphism</h2>
+          <!-- .image.push -->
+          <!-- %a{:href => "http://skeu.it/"} -->
+          <!-- %img{:src => "http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/noteOne.jpg"} -->
+          <!-- %p.caption When skeuomorphism is taken too far (via <a href="http://skeu.it/">Skeu.it</a>) -->
+          <p>A lot has been said about the excesses of both realism and skeuomorphism, usually manifested in fake leather and wooden UI controls <sup><a href="#skeu-it">[7]</a></sup>.</p>
+          <p>First of all, realism done wrong can morph into kitsch. After all, even in real life fake leather and fake wood are not exactly considered the pinacle of good taste, so why would things be any different on our screens?</p>
+          <p>There's also the problem of getting skeuomorphism wrong: making something <em>look</em> like a physical object, but not <em>work</em> like it, also known as the "uncanny valley" of user interface design <sup><a href="#francisco-inchauste">[8]</a></sup>.</p>
+          <div class='image push'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/contacts.png'>
+            <p class='caption'>Apple's Contacts app for iPad looks like a notebook, yet doesn't let you swipe the pages to browse through your contacts.</p>
+          </div>
+          <p>An obvious example of this is Apple's Contacts app for iPad, which like iBooks uses the visual metaphor of a book. But unlike iBooks, Contacts doesn't let you swipe left and right to flip pages, breaking the book metaphor completely.</p>
+          <p>But a more subtle yet much deeper problem lies in the very concept of <em>functionally</em> skeuomorphic interfaces, independently of whether their appearance is realist or not.</p>
+          <p>That problem is that when borrowing elements from a design's previous incarnation, you often also bring its <strong>limitations</strong> along for the ride, even when these limitations have no reason to exist anymore.</p>
+          <p>For example, calendars have traditionally featured one month per page, because they're limited by the physical concept of the page.</p>
+          <p>But although the digital medium has no such limitation, many digital calendars still adhere to the one-month-per-screen rule out of tradition instead of (for example) centering the view on the current week.</p>
+          <div class='image wide'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/calculators.png'>
+            <p class='caption'>Calculator, <a href="http://tapbots.com/software/calcbot/">Calcbot</a>, and <a href="http://www.acqualia.com/soulver/">Soulver</a>: three different takes on the calculator. Note how for the sake of realism, Apple even uses the traditional "C" key for clearing instead of more understandable backspace symbol like Calcbot.</p>
+          </div>
+          <p>Another good example is Apple's own calculator app for iOS: by aping a real, physical calculator Apple is artificially recreating physical calculators' limitations in the digital space: single-line screen, limited number of buttons, etc.</p>
+          <p>By contrast, <a href="http://tapbots.com/software/calcbot/">Calcbot</a> does a much better job of shedding those limitations by including a history feature that real calculators obviously lack.</p>
+          <p>And Mac app <a href="http://www.acqualia.com/soulver/">Soulver</a> goes one step further by shedding the calculator metaphor entirely and instead embracing its platform.</p>
+          <div class='image pull'>
+            <a href='https://creativemarket.com/Adrien/516-Braun-UI'>
+              <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/braun_ui.png'>
+            </a>
+            <p class='caption'>These UI elements look gorgeous, but they also carry an implicit legacy of physical limitations (<a href="https://creativemarket.com/Adrien/516-Braun-UI">Braun UI</a> by Adrien Olczak).</p>
+          </div>
+          <p>Or take the humble light switch: these are often used in realist UIs, but unlike radio buttons or dropdowns they condition our mind to see the choice as a purely binary one, even when three options might be more appropriate.</p>
+          <p>When done right, skeuomorphism and realism will trigger strong associations with real-world counterparts. This is both a strength and a weakness: sometimes, the association can be so strong that it will stop you from improving on what's already been done.</p>
+        </section>
+        <section id='rise_flat_design'>
+          <h2>The Rise of Flat Design</h2>
+          <p>Whole industries have sprouted around predicting design trends in various fields. Still, nobody expected the next design movement to be spurred by Microsoft.</p>
+          <p>Whether to better differentiate themselves from Apple or because they genuinely thought this was a better design philosophy, Microsoft embraced a completely different aesthetic for their Metro-style user interface.</p>
+          <p>Gone were the shadows, highlights, gradients, and textures of iOS apps. Instead, Metro offered flat squares of color with big typography.</p>
+          <aside class='half-push'>
+            <h4>Metro vs Metro</h4>
+            <p>in 2012, Microsoft got into trouble with German supermarket chain Metro for trademark infringement, leading them to abandon the name "Metro UI" <sup><a href="#wikipedia-metro">[9]</a></sup>.</p>
+            <p>But since the best they could come up with to replace it is "Microsoft design language", I'm going to keep on using "Metro". I'll have to trust you to know when I'm talking about the user interface or the supermarket chain.</p>
+          </aside>
+          <p>Flat design had been around for a long time (you can trace its roots back to Swiss design <sup><a href="#cole-peters">[10]</a></sup>), but Microsoft certainly sent a strong signal by using it so prominently.</p>
+          <p>Whether or not the general public cares for big block of flat colors, Microsoft's new design philosophy certainly seemed to strike a chord within the tech sphere, with many praising Metro's strong focus on typography and colors.</p>
+          <p>And while flat design is often purely visual, it does resonate with designer's love of minimalist concepts, embodied by the famous Antoine de Saint-Exupery that “perfection is achieved not when there is nothing left to add, but when there is nothing left to take away”.</p>
+          <div class='image pull'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/letterpress.png'>
+            <p class='caption'>Letterpress, a shining examples of flat design applied to games.</p>
+          </div>
+          <p>This led many designers to start questioning their approach <sup><a href="#allan-grinshtein">[11]</a></sup>, and realize that while stitched leather textures are a lot of fun to design in Photoshop, they're probably not the best fit for a stock market app.</p>
+          <p>Even game UIs —traditionally a bastion of detailed textures and elaborate shadows— are showing signs of embracing minimalism.</p>
+          <p>Two of the most talked-about games in recent month, <a href="http://www.atebits.com/letterpress/">Letterpress</a> and <a href="http://playhundreds.com/">Hundreds</a> both feature flat designs. In fact, Letterpress creator Loren Brichter even revealed that the whole game only uses a single image!</p>
+        </section>
+        <section id='influence_typography'>
+          <h2>The Influence of Typography</h2>
+          <div class='image push'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/themagazine.png'>
+            <p class='caption'>Apps like <a href="http://the-magazine.org/">The Magazine</a> put typography front and center.</p>
+          </div>
+          <p>But Metro is only half of the story. While Microsoft was working on Metro, over on the Apple side a big innovation was also taking place: high-definition (or "retina") screens were being introduced, first on the iPhone, then on the iPad and laptops.</p>
+          <p>For the first time ever, computer displays were approaching the quality of printed paper.</p>
+          <p>A few years earlier, the adoption of web-ready font formats such as EOT and WOFF by browsers had paved the way to using any font on the web, and many foundries had started the long and arduous process of optimizing their catalog for onscreen use.</p>
+          <p>But high-dpi screens make it possible to use even faces that <em>haven't</em> been optimized for screen use, as Erik Spiekermann <a href="https://twitter.com/espiekermann/status/180877084426637313">tweeted</a>:</p>
+          <blockquote>If you want good type on Retina displays, stop discussing hinting et al. Just search for faces that happen to look good. Like the old days.</blockquote>
+          Or, as John Gruber put it in his article on the topic <sup><a href="#john-gruber">[12]</a></sup>:
+          <blockquote>The trend away from skeuomorphic special effects in UI design is the beginning of the retina-resolution design era.</blockquote>
+          <p>When you have a high-definition display and screen-optimized fonts, you quickly realize you don't need much else to create beautiful work.</p>
+        </section>
+        <section id='responsive_web'>
+          <h2>The Responsive Web</h2>
+          <p>The mobile web's influence on design was felt in yet one more way: responsive design.</p>
+          <p>Responsive (or adaptive) design is the idea that instead of creating multiple designs for different devices, a single design should adapt to multiple screens.</p>
+          <p>This can take the form of a multi-column desktop grid morphing into a single-column layout, big fonts getting smaller, or hover-activated menus responding to taps on a phone.</p>
+          <div class='image'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/tnw.jpg'>
+            <p class='caption'><a href="http://thenextweb.com">The Next Web</a>'s recent redesign is both flat and responsive.</p>
+          </div>
+          <p>All this resizing and shape-shifting makes it very hard to use fixed-size assets. Instead, designers found it much more efficient to rely on CSS-generated graphics rendered by the browser.</p>
+          <p>Moreover, traditional design programs such as Photoshop don't have an answer for responsive design yet, which is pushing many designers towards prototyping in the browser directly, foregoing static mockups entirely.</p>
+          <p>Add all this together and you begin to see why many designers are moving away from texture-heavy realism towards the more flexible and lighter-weight flat style.</p>
+        </section>
+        <section id='limits_flat'>
+          <h2>The Limits of Flat</h2>
+          <p>This is not to say that the flat style is without its own problems.</p>
+          <p>First of all, like any design trend, it will probably be abused by many designers jumping on the bandwagon without thinking their design choices through.</p>
+          <p>But where the main victim of realism is merely good taste, taking minimalism too far can have serious consequences on usability <sup><a href="#kyro-beshay">[13]</a></sup>.</p>
+          <p>Users have come to rely on a lot of subtle clues to make their way through an interface: buttons have slight gradients and rounded corners, form fields have a soft inner shadow, and navigation bars "float" over the rest of the content.</p>
+          <p>Remove all these clues, and you end up with a flat world where every element is suddenly placed at the same level, potentially leading to confusion: Is this a button, or simply a banner? Will anything happen if I tap this? <sup><a href="#max-rudberg">[14]</a></sup></p>
+          <p>As designers, will we be able to resist the appeal of minimalism and keep in mind that the needs of users should always come before our aesthetic pursuits? If the way we handled the previous realism trend is any indication, users might be in for a rough ride…</p>
+          <p>So it bears repeating that visual style is nothing more than a means to an end <sup><a href="#branch">[15]</a></sup>. If the situation calls for realism, go nuts on textures and highlights. On the other hand, if a flat aesthetic achieves the design's goal better then it might be time to go on a gradient diet.</p>
+          <p>Knowing which style is appropriate for which project can only come with experience, as well as lots of experimentation <sup><a href="#sacha-2">[16]</a></sup>.</p>
+        </section>
+        <section id='unexpected_contender'>
+          <h2>An Unexpected Contender</h2>
+          <p>One of the main reason why the "realism vs flat design" debate gained so much steam in recent months is surely that it maps neatly to the "Apple vs Microsoft" narrative.</p>
+          <p>So it came as a surprise when Google renewed its focus on design <sup><a href="#the-verge">[17]</a></sup> and proved itself a serious contender.</p>
+          <div class='image pull'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/gmaps.png'>
+            <p class='caption'>Google Maps for iPhone's "almost flat" design.</p>
+          </div>
+          <p>With the recent releases of their newer mobile apps, Google has started pushing a style that some describe as "almost flat" <sup><a href="#matthew-moore">[18]</a></sup>, or maybe "skeuominimalism" <sup><a href="#edward-sanchez">[19]</a></sup>. Unlike the drastic visual wastelands of Gmail or Google Reader, this new style uses elements like shadows and gradients in a tasteful, subtle way.</p>
+          <p>This style offers the best of both world: realism's affordances and subtle hints combined with the purity and simplicity off flat design.</p>
+          <p>But another way to look at it is that it's simply design done right: seeking efficiency and simplicity without sacrificing usability to the altar of minimalism.</p>
+          <p>In other words, Google is not so much pioneering a new style as showing us what digital design looks like when it's done right (…and by the same occasion, how much we all still suck at it!).</p>
+        </section>
+        <section id='way_forward'>
+          <h2>The Way Forward</h2>
+          <p>And what do <em>I</em> think about all this?</p>
+          <p>I'm glad you asked. Of course, I think it's important to keep in mind that visual styles are just tools, and not goals in themselves. But this is (I hope) a fairly obvious point, and one that many designers have made before me <sup><a href="#wells-riley">[20]</a></sup>.</p>
+          <p>So instead, I will pick a camp and put my chips in with flat design (specifically, Google's less-extreme variety). But not for the reasons you might think.</p>
+          <p>It's not that I think that flat design is inherently superior, or that I have a minimalism fetish. After all, I love a gorgeously textured iOS app just as much as anybody.</p>
+          <p>I just feel like designers have had a lot of practice crafting realistic things. Browse Dribbble for a few minutes and you'll come across dozens of intricate, drool-worthy 3D renders or Photoshop mockups.</p>
+          <p>What we haven't had as much practice at yet is designing flexible, beautifully typeset responsive sites that adapt to various resolutions and environments. And we've gotten even less practice at actually <em>coding</em> them.</p>
+          <p>I believe that until our tools catch up with what the web has to offer, we'll have to get our hands dirty and start coding <sup><a href="#brad-frost">[21]</a></sup>. And when you're both designing and coding a layout, you start to appreciate the value of keeping things lightweight.</p>
+          <p>Flat design also forces you to really care about typography and layout, two areas where web design has traditionally lagged behind its more established print cousin.</p>
+          <p>And on the mobile side, flat design can make it easier to focus on animation and interaction design, as apps like Letterpress and <a href="http://www.realmacsoftware.com/clear/">Clear</a> have shown us.</p>
+          <p>So this is why I've been embracing flat design lately: not just as an aesthetic choice, but as a design exercise that forces me to shore up my weaknesses.</p>
+        </section>
+      </article>
+      <div class='share block' id='share'>
+        <h3>Liked this essay? React on Twitter:</h3>
+        <blockquote class="twitter-tweet"><p>Flat Pixels: The Battle Between Flat Design And Skeuomorphism <a href="http://t.co/MRmL6WPm" title="http://sachagreif.com/flat-pixels/">sachagreif.com/flat-pixels/</a> via @<a href="https://twitter.com/sachagreif">sachagreif</a></p>&mdash; Sacha Greif (@SachaGreif) <a href="https://twitter.com/SachaGreif/status/301122396197355520">February 12, 2013</a></blockquote>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      <div class='notes block' id='notes'>
+        <h3>Notes</h3>
+        <div class='columns'>
+          <ol>
+            <li id='wikipedia-skeuomorphism'>
+              <a href='http://en.wikipedia.org/wiki/Skeuomorph'>Skeuomorphism</a>
+              <p>Wikipedia's skeuomorphism definition.</p>
+            </li>
+            <li id='sacha-1'>
+              <a href='http://sachagreif.com/what-skeuomorphism-is-and-isnt/'>What Skeomorphism Really Is</a>
+              <p>My post clarifying a few misconceptions about skeuomorphism.</p>
+            </li>
+            <li id='loren-brichter'>
+              <a href='http://gigaom.com/apple/loren-brichter-designs-on-the-future-of-ios-apps/'>Loren Brichter: Designs on the future of iOS apps</a>
+              <p>Loren Brichter shares his vision for the future of iOS design.</p>
+            </li>
+            <li id='anthony-stonehouse'>
+              <a href='http://www.thewanderlust.net/blog/2010/03/29/user-interface-design-in-video-games/'>User interface design in video games</a>
+              <p>Anthony Stonehouse explores different video game UI design techniques.</p>
+            </li>
+            <li id='fast-company'>
+              <a href='http://www.fastcodesign.com/1670760/will-apples-tacky-software-design-philosophy-cause-a-revolt'>Will Apple’s Tacky Software-Design Philosophy Cause A Revolt?</a>
+              <p>Fast Company's report on skeuomorphism at Apple.</p>
+            </li>
+            <li id='sebastian-de-with'>
+              <a href='http://dewith.com/2012/an-android-design-process/'>An Android Design Process</a>
+              <p>Sebastian de With's exposé on the design process for Android clock app <a href="http://www.doubletwist.com/alarmclock/">Doubletwist Alarm</a>.</p>
+            </li>
+            <li id='skeu-it'>
+              <a href='http://skeu.it/'>Skeu.it</a>
+              <p>Highlighting skeuomorphism's worst offenders.</p>
+            </li>
+            <li id='francisco-inchauste'>
+              <a href='http://www.getfinch.com/2010/08/avoiding_the_uncanny_valley_of_interface_design/'>Avoiding the Uncanny Valley of Interface Design</a>
+              <p>Francisco Inchauste shows why you can't half-ass skeuomorphism.</p>
+            </li>
+            <li id='wikipedia-metro'>
+              <a href='http://en.wikipedia.org/wiki/Metro_(design_language)#Legal_issues'>Metro (design language)</a>
+              <p>Metro's legal issues.</p>
+            </li>
+            <li id='cole-peters'>
+              <a href='http://colepeters.com/flatliners/'>Flatliners</a>
+              <p>Cole Peters gives a little historical context to the "new" flat design trend.</p>
+            </li>
+            <li id='allan-grinshtein'>
+              <a href='http://layervault.tumblr.com/post/32267022219/flat-interface-design'>The Flat Design Era</a>
+              <p>Allan Grinshtein's initial blog post that ended up putting the term "flat design" on the map. See also: the corresponding <a href="http://news.ycombinator.com/item?id=4571551">Hacker News thread</a>.</p>
+            </li>
+            <li id='john-gruber'>
+              <a href='http://daringfireball.net/2013/01/the_trend_against_skeuomorphism'>The Trend Against Skeuomorphic Textures and Effects in User Interface Design</a>
+              <p>John Gruber gives his take on the backlash against skeuomorphism, and how it relates to Apple.</p>
+            </li>
+            <li id='kyro-beshay'>
+              <a href='http://kyrobeshay.com/post/37101801643/why-im-no-metrosexual'>Why I’m No Metrosexual</a>
+              <p>Kyro Beshay shares his reservations about flat design and Microsoft's "Metro" UI.</p>
+            </li>
+            <li id='max-rudberg'>
+              <a href='http://blog.maxrudberg.com/post/41005209081/flat-ui-is-not-the-only-way-forward'>Flat UI is Not the Only Way Forward</a>
+              <p>Max Rudberg's backlash-to-the-backlash post reminds us that the answer is probably somewhere in the middle.</p>
+            </li>
+            <li id='branch'>
+              <a href='http://branch.com/b/how-flat'>How Flat?</a>
+              <p>A great discussion on Branch about flat design, with comments by Daniel Howells, Rogie King, and Jon Gold  among others.</p>
+            </li>
+            <li id='sacha-2'>
+              <a href='http://sachagreif.com/the-flat-sink/'>The Flat Sink</a>
+              <p>My article on why flat design is not always the solution, whether it's for a sink or a site.</p>
+            </li>
+            <li id='the-verge'>
+              <a href='http://www.theverge.com/2013/1/24/3904134/google-redesign-how-larry-page-engineered-beautiful-revolution'>Redesigning Google: how Larry Page engineered a beautiful revolution</a>
+              <p>The Verge takes us behind the scene to look at how Google is finding its own not-quite-flat, not-quite-skeuomorphic graphic style.</p>
+            </li>
+            <li id='matthew-moore'>
+              <a href='http://www.matthewmooredesign.com/almost-flat-design/'>Almost Flat Design</a>
+              <p>Matthew Moore defines Google's new visual direction as "almost flat" design.</p>
+            </li>
+            <li id='edward-sanchez'>
+              <a href='http://edwardsanchez.me/blog/13568587'>Skeuominimalism - The Best of Both Worlds</a>
+              <p>Edward Sanchez introduces "skeuominimalism" as the best compromise.</p>
+            </li>
+            <li id='wells-riley'>
+              <a href='http://blog.wells.ee/less-aesthetic-more-design'>Less Aesthetic, More Design</a>
+              <p>Wells Riley reminds us that while visual style is important, design is first and foremost about building something useful.</p>
+            </li>
+            <li id='brad-frost'>
+              <a href='http://bradfrostweb.com/blog/post/the-post-psd-era/'>The Post-PSD Era</a>
+              <p>Brad Frost explains why we've entered the post-PSD era.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class='links block' id='links'>
+        <h3>Even More Links!</h3>
+        <div class='columns'>
+          <ul>
+            <li>
+              <a href='http://viget.com/inspire/so-in-right-now-flat-web-design'>Art Movements and Web Trends (and Gratuitous Mucha Posters)</a>
+              <p>Viget's Blair Culbreth exposes the link between Art Nouveau and Art Deco, and the trends we're experiencing today.</p>
+            </li>
+            <li>
+              <a href='http://realmacsoftware.com/blog/skeuomorphism-and-the-user-interface'>Skeuomorphism and the User Interface</a>
+              <p>Christopher Downer from Realmac Software underlines the difference between skeuomorphism and realism.</p>
+            </li>
+            <li>
+              <a href='http://kensegall.com/2012/11/the-great-skeuomorphism-misunderstanding/'>The great skeuomorphism misunderstanding</a>
+              <p>Ken Segall makes the case for skeuomorphism having its place at Apple.</p>
+            </li>
+            <li>
+              <a href='http://www.themachinestarts.com/read/2012-11-how-we-started-calling-visual-metaphors-skeuomorphs-why-apple-design-debate-mess'>How We Started Calling Visual Metaphors “Skeuomorphs” and Why the Debate over Apple’s Interface Design is a Mess</a>
+              <p>Chris Baraniuk explains why we're all wrong about what "skeuomorphism" really means, more or less invalidating the whole point of everything you just read.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='sidebar block' id='sidebar'>
+        <div class='wrapper'>
+          <div class='tagline'>
+            <h3>Want more articles like this?</h3>
+            <a href='http://sidebar.io'>Sidebar gives you the 5 best design links of the day →</a>
+          </div>
+          <a class='screenshot' href='http://sidebar.io'>
+            <img src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/sidebar.png'>
+          </a>
+        </div>
+      </div>
+      <div class='about block' id='about'>
+        <div class='bio'>
+          <h3>About the Author</h3>
+          <img class='portrait' src='http://dun4nx4d6jyre.cloudfront.net/flat-pixels/images/sacha.jpg'>
+          <p>I'm a designer from France living in Osaka, Japan. I've worked with companies like Le Monde and startups including Hipmunk, RubyMotion, and Intercom.</p>
+          <p>I now focus on my own projects, such as <a href="http://telesc.pe">Telescope</a>, an open-source social news app, and <a href="http://sidebar.io">Sidebar</a>, which gives you the 5 best design links of the day.</p>
+          <p>You can also <a href="http://sachagreif.com">check out my blog</a>, or <a href="http://sachagreif.com/newsletter">sign up to my newsletter</a> to receive weekly design advice.</p>
+        </div>
+        <div class='article'>
+          <h3>About this Essay</h3>
+          <p>Like everybody else, I've grown tired of reading post after post about skeuomorphism and flat design.</p>
+          <p>But I felt these articles were merely scratching the surface of what remains an interesting topic. So I decided to write the ultimate essay about it.</p>
+          <p>This was also a good opportunity to practice what I preach, as this essay was an occasion to focus on typography and layout. You can read more about all this <a href="http://sachagreif.com/making-flat-pixels">on my blog</a>.</p>
+        </div>
+      </div>
+      <footer class='block'>
+        <p>Designed (and assembled) by <a href="http://sachagreif.com">Sacha Greif</a> in Osaka.</p>
+      </footer>
+    </div>
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1&appId=449721305061869";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+    <script>
+      window.jQuery || document.write('<\/script>')
+    </script>
+    <script src='javascripts/plugins.js'></script>
+    <script src='javascripts/script.js'></script>
+    <script src="//static.getclicky.com/js" type="text/javascript"></script>
+    <script type="text/javascript">try{ clicky.init(66362194); }catch(e){}</script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66362194ns.gif" /></p></noscript>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+// function $_GET(q,s) {
+//       s = s ? s : window.location.search;
+//       var re = new RegExp('&'+q+'(?:=([^&]*))?(?=&|$)','i');
+//       return (s=s.replace(/^?/,'&').match(re)) ? (typeof s[1] == 'undefined' ? '' : decodeURIComponent(s[1])) : undefined;
+// }
+function getUrlVars(){var a={},b=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(b,c,d){a[c]=d});return a}function getRandomInt(a,b){return Math.floor(Math.random()*(b-a+1))+a}$(function(){var a=document.referrer.split("/")[2];(a=="news.ycombinator.org"||a=="news.ycombinator.com")&&$(".hn-message").removeClass("hidden");$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:""});window.r_index=1;$(".refresh").click(function(){$(".insults li").removeClass("hidden").hide();var a=getRandomInt(1,7);a===window.r_index&&(a=getRandomInt(1,7));window.r_index=a;$(".insults li:nth-child("+a+")").fadeIn("medium");return!1});$(".buy").click(function(){$(".overlay").removeClass("hidden");$(this).next(".options").removeClass("hidden");$(this).hasClass("regular")?_kmq.push(["record","Clicked Buy",{Version:"Regular",Amount:5.99}]):_kmq.push(["record","Clicked Buy",{Version:"Deluxe",Amount:11.99}]);return!1});$(".overlay").click(function(){$(".options").addClass("hidden");$(this).addClass("hidden")})});
