@@ -1,5 +1,5 @@
 import React from 'react'
-import { MenuContainer, MenuLink } from './styled/styled.js';
+import { MenuContainer, MenuLink } from './styled-components.js';
 
 import icons from '../data/icons.yaml'
 import Logo from './logo.js'

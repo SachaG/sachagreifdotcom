@@ -1,8 +1,8 @@
 import { injectGlobal, css } from 'styled-components';
 
 import styled from 'styled-components';
-import {orangered, black, white, grey} from '../../data/colors.yaml'
-import fonts from '../../data/fontsizes.yaml'
+import {orangered, black, white, grey} from '../data/colors.yaml'
+import fonts from '../data/fontsizes.yaml'
 
 /* 
 
@@ -83,27 +83,17 @@ Sections
 */
 
 export const SectionBlock = styled.section`
-  // padding: ${spacing.single} 240px ${spacing.single} 360px;  
   ${small`
-    padding: 0 10px 0 10px;
+    padding: 10px 10px 10px 10px;
   `}
   ${medium`
-    padding: 0 80px 0 80px;
+    padding: 20px 80px 20px 80px;
   `}
   ${large`
-    padding: 0 120px 0 240px;
-    height: 100vh;
+    padding: 40px 120px 40px 240px;
   `}
 
-  // height: 1px;
   position: relative;
-  // border-bottom: 1px dotted #ccc;
-  // background: ${props => `rgba(0,0,0,${0+props.index/30})`};
-  // svg{
-  //   path{
-  //     fill: #ffffff;
-  //   }
-  // }
 
   .svg-background{
     position: absolute;
@@ -114,6 +104,13 @@ export const SectionBlock = styled.section`
     height: 100%;
     width: 100%;
     z-index: 1;
+  }
+  &:last-of-type{
+    .section-icon{
+      &:after{
+        display: none;
+      }
+    }
   }
 `
 
@@ -142,7 +139,7 @@ export const SectionTop = styled.div`
   `}
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: calc(${spacing.single} * 1.5);
+  margin-bottom: ${spacing.single};
 `
 
 export const SectionHeader = styled.div`
@@ -196,8 +193,8 @@ export const SectionDescription = styled.div`
   ${large`
     font-size: ${fonts.medium};
   `}
-  p{
-    margin-bottom: ${spacing.half};
+  p+p{
+    margin-top: ${spacing.half};
   }
 `
 
@@ -219,25 +216,41 @@ export const MenuContainer = styled.div`
   z-index: 100
   top: ${spacing.single};
   left: 60px;
-  a+a{
-    margin-top: ${spacing.single};
-    margin-top: calc(100vh - 80px);
+`
+
+export const IconBlock = styled.div`
+  ${small`
+    display: none;
+  `}
+  ${medium`
+    display: none;
+  `}
+  ${large`
+    display: flex;
+  `}
+  position: absolute;
+  left: 0;
+  top: 40px;
+  bottom: 0;
+  width: 240px;
+  justify-content: center;
+
+  &:after{
+    display: block;
+    position: absolute;
+    content: " ";
+    background: ${black};
+    width: 4px;
+    margin-left: -2px;
+    left: 50%;
+    top: 80px;
+    bottom: -100px;
+    z-index: 90;
   }
-  // &:before{
-  //   display: block;
-  //   position: absolute;
-  //   content: " ";
-  //   background: ${black};
-  //   width: 8px;
-  //   margin-left: -4px;
-  //   left: 50%;
-  //   height: 100%;
-  // }
 `
 
 export const LogoBlock = styled.div`
-  margin-bottom: ${spacing.single};
-  margin-bottom: calc(100vh - 120px);
+  position: absolute;
   span {
     display: none;
   }
@@ -249,16 +262,11 @@ export const LogoImage = styled.h1`
   width: 120px;
   height: 120px;
   background: ${black};
-  // background: ${orangered};
-  // border: 4px solid ${black};
   padding: 20px;
   border-radius: 100%;
   margin: 0;
   path{
     fill: white;
-  }
-  &:hover{
-    // background: ${orangered};
   }
 `
 
@@ -267,13 +275,12 @@ export const MenuLink = styled.a`
   align-items: center;
   justify-content: center;
   position: relative;
+  top: 35px;
   z-index: 110;
   border-radius: 100%;
-  // background: ${black};
   border: 4px solid ${black};
   width: 80px;
   height: 80px;
-  // color: ${white};
   font-size: ${fonts.large};
   color: ${black};
 
@@ -285,24 +292,6 @@ export const MenuLink = styled.a`
     border-color: ${orangered};
     color: ${white};
     text-decoration: none;
-    // svg{
-    //   path, polygon, polyline, rect, line{
-    //     fill: ${white};
-    //     stroke: ${white};
-    //   }
-    // }
-  }
-  &:before{
-    display: block;
-    position: absolute;
-    content: " ";
-    background: ${black};
-    width: 4px;
-    margin-left: -2px;
-    left: 50%;
-    top: calc(-100vh + 80px - 4px);
-    height: ${spacing.single};
-    height: calc(100vh - 80px);
   }
   span{
     display: block;
@@ -423,10 +412,17 @@ Footer
 */
 
 export const FooterContainer = styled.div`
+  ${small`
+    padding: 10px 10px 10px 10px;
+  `}
+  ${medium`
+    padding: ${spacing.half} 80px ${spacing.half} 80px;
+  `}
+  ${large`
+    padding: ${spacing.half} 120px ${spacing.half} 240px;
+  `}
   text-align: center;
-  padding: ${spacing.half} 0;
   background: ${black};
   color: ${white};
   font-size: ${fonts.extrasmall};
-  // border-top: 1px dashed ${black};
 `

@@ -1,5 +1,5 @@
 import React from 'react'
-import {FooterContainer} from './styled/styled.js';
+import {FooterContainer} from './styled-components.js';
 import MarkdownIt from 'markdown-it'
 const md = new MarkdownIt()
 

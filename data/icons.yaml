@@ -58,88 +58,7 @@ sg: >
   </g>
   </svg>
 
-smiley: >
-  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
-     height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-  <g id="Guides">
-    <g id="_x32_0_px_2_">
-    </g>
-    <g id="_x32_0px">
-    </g>
-    <g id="_x34_0px">
-    </g>
-    <g id="_x34_4_px">
-    </g>
-    <g id="_x34_8px">
-      <g id="_x31_6px">
-      </g>
-      <g id="square_4px">
-        <g id="_x32_8_px">
-          <g id="square_4px_2_">
-          </g>
-          <g id="square_4px_3_">
-          </g>
-          <g id="square_4px_1_">
-          </g>
-          <g id="_x32_4_px_2_">
-          </g>
-          <g id="_x31_2_px">
-          </g>
-        </g>
-      </g>
-    </g>
-    <g id="Icons">
-    </g>
-    <g id="_x32_0_px">
-    </g>
-    <g id="square_6px">
-      <g id="_x31_2_PX">
-      </g>
-    </g>
-    <g id="_x33_6_px">
-      <g id="_x33_2_px">
-        <g id="_x32_8_px_1_">
-          <g id="square_6px_1_">
-          </g>
-          <g id="_x32_0_px_1_">
-            <g id="_x31_2_PX_2_">
-            </g>
-            <g id="_x34_8_px">
-              <g id="_x32_4_px">
-              </g>
-              <g id="_x32_4_px_1_">
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-    <g id="_x32_0_px_3_">
-    </g>
-    <g id="_x32_0_px_4_">
-    </g>
-    <g id="New_Symbol_8">
-      <g id="_x32_4_px_3_">
-      </g>
-    </g>
-  </g>
-  <g id="Artboard">
-  </g>
-  <g id="Free_Icons">
-    <g>
-      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="7.5,14.5 
-        9.5,16.5 14.5,16.5 16.5,14.5    "/>
-      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="6,9.5 8,8 
-        10,9.5    "/>
-      <polyline style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" points="14,9.5 
-        16,8 18,9.5     "/>
-      <polygon style="fill:none;stroke-linejoin:round;stroke-miterlimit:10;" points="22.5,18 12,23.5 1.5,18 1.5,6 
-        12,0.5 22.5,6     "/>
-    </g>
-  </g>
-  </svg>
-
-robot: >
+projects: >
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
      height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
   <g id="Guides">
@@ -329,7 +248,7 @@ writing: >
   </g>
   </svg>
 
-mic: >
+podcasts: >
   <svg width="18px" height="23px" viewBox="0 0 18 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
         <g id="Group" >
@@ -347,7 +266,7 @@ mic: >
     </g>
   </svg>
 
-skull: >
+graveyard: >
   <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
         <g id="Group"  stroke-width="0.8">

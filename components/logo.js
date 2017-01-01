@@ -1,5 +1,5 @@
 import React from 'react'
-import { LogoBlock, LogoImage } from './styled/styled.js';
+import { IconBlock, LogoBlock, LogoImage } from './styled-components.js';
 import { prefixLink } from 'gatsby-helpers'
 import { Link } from 'react-router'
 
@@ -7,16 +7,20 @@ import icons from '../data/icons.yaml'
 
 const Logo = () => 
 
-  <LogoBlock>
+  <IconBlock>
 
-    <Link to={prefixLink('/')}>
+    <LogoBlock>
 
-      <LogoImage dangerouslySetInnerHTML={{__html: icons.sg}}/>
+      <Link to={prefixLink('/')}>
 
-      <span>Sacha Greif</span>
+        <LogoImage dangerouslySetInnerHTML={{__html: icons.sg}}/>
 
-    </Link>
+        <span>Sacha Greif</span>
 
-  </LogoBlock>
+      </Link>
+
+    </LogoBlock>
+
+  </IconBlock>
 
 export default Logo

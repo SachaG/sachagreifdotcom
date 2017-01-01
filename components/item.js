@@ -4,7 +4,7 @@ const md = new MarkdownIt()
 
 import moment from 'moment'
 
-import {ItemTitle, ItemDescription, ItemBlock, ItemDate} from './styled/styled.js';
+import {ItemTitle, ItemDescription, ItemBlock, ItemDate} from './styled-components.js';
 
 const Item = ({title, description, url, date}) => 
   <ItemBlock className="item">
