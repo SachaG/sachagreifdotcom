@@ -14,10 +14,11 @@ const Section = ({name, title, description, items, index, background, text, cta}
 
     <Texture className="svg-background" width={100} height={100} data={{}} options={{index}}/>
 
-    <SectionIcon link={`#section-${index + 1}`} iconName={name} />
 
     <SectionContents>
 
+    <SectionIcon link={`#section-${index + 1}`} iconName={name} />
+    
       <SectionTop>
         <SectionHeader>
     
@@ -28,6 +29,7 @@ const Section = ({name, title, description, items, index, background, text, cta}
         </SectionHeader>
         {cta ? <SectionCTA href={cta.url}>{cta.text} ></SectionCTA> : null}
       </SectionTop>
+
       <Items>
 
         {items ? items.map((item, index) => <Item {...item} key={index}/>) : null}

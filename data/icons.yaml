@@ -58,6 +58,16 @@ sg: >
   </g>
   </svg>
 
+about: >
+  <svg width="42px" height="46px" viewBox="0 0 42 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Stroke 1992</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <polyline id="Stroke-1992" stroke-width="2" points="28 45 28 40 35 40 35 30 41 30 35 17 35 11 19 1 1 11 1 30 9 37 9 45"></polyline>
+    </g>
+  </svg>
+  
 projects: >
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
      height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">

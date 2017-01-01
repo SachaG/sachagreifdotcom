@@ -1,5 +1,5 @@
-about:
-  title: About
+intro:
+  title: Intro
   background: '#EB613D'
   text: '#333333'
   # description: >
@@ -26,10 +26,37 @@ about:
     - title: SoundCloud
       url: https://soundcloud.com/sacha-greif
 
+about:
+  title: Bio
+  background: '#A3D2DF'
+  text: '#333333'
+  description: >
+    A little more about me.
+  items: 
+    - description: >
+
+        I've always loved spending way too much time on the computer, 
+        and spent my teens tinkering with Photoshop and building crappy websites.
+        
+        But after getting a computer science degree, I realized writing compilers wasn't for me
+        and decided to switch majors completely and learn Mandarin instead. 
+        
+        Yet as it turns out, my path would lead back to computers: after moving to China in 2006, I ended up quitting my language studies and getting a job in Beijing as a web designer. 
+    
+    - description: >
+
+        After coming back to France in 2007, I became a freelance UI designer, working with companies such as
+        [Hipmunk](https://www.hipmunk.com/), [Intercom](https://www.intercom.com/), and [Le Monde](http://www.lemonde.fr/).
+       
+        A few years later, I decided what I really wanted was to create my own products, and 
+        set out to re-learn web programming. 
+        
+        After moving to Japan in 2012 for my wife's studies, I'm now living my dream of writing, working on my own projects, and
+        trying to make a living as a solo entrepreneur.
 
 code:
   title: Code
-  background: '#A3D2DF'
+  background: '#C6F0D5'
   text: '#333333'
   description: >
     The duct tape that keeps the world together.
@@ -54,7 +81,7 @@ code:
 
 projects:
   title: Projects
-  background: '#F5DECE'
+  background: '#FFEEB2'
   text: '#333333'
   # description: >
   #   Get a cool idea; spend way too much time on it; launch; rinse; repeat.
@@ -133,7 +160,7 @@ writing:
    
 podcasts:
   title: Podcasts
-  background: '#C6F0D5'
+  background: '#F5DECE'
   text: '#eeeeee'
   description: >
     Now featuring 20% more French accent.

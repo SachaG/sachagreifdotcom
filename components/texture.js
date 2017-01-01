@@ -59,6 +59,19 @@ const Texture = d3Wrap({
       break
 
       case 5:
+        // t = textures.paths()
+        //   .d("hexagons")
+        //   .lighter()
+        //   .stroke("rgba(0,0,0,0.1)")
+        //   .size(20)
+        t = textures.paths()
+          .d("squares")
+          .lighter()
+          .stroke("rgba(0,0,0,0.08)")
+
+      break
+
+      case 6:
         t = textures.paths()
           .d("crosses")
           .lighter()

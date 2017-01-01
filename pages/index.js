@@ -9,8 +9,7 @@ import data from '../data/site.yaml'
 import icons from '../data/icons.yaml'
 
 import Section from '../components/section.js'
-import SectionAbout from '../components/section-about.js'
-import Menu from '../components/menu.js'
+import SectionIntro from '../components/section-intro.js'
 import Footer from '../components/footer.js'
 
 export default class Index extends React.Component {
@@ -21,8 +20,10 @@ export default class Index extends React.Component {
       return item
     })
 
-    const [about, ...rest] = dataWithKeys
+    const [intro, ...rest] = dataWithKeys
 
+    console.log(rest)
+    
     return (
       <div>
         <Helmet
@@ -32,7 +33,7 @@ export default class Index extends React.Component {
             {"name": "keywords", "content": "sample, something"},
           ]}
         />
-        <SectionAbout {...about} index={0} />
+        <SectionIntro {...intro} index={0} />
         {rest.map((sectionData, index) => <Section {...sectionData} index={index+1} key={sectionData.name} />)}
         <Footer />
       </div>

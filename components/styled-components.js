@@ -75,6 +75,12 @@ export const Layout = styled.div`
   position: relative;
 `
 
+export const Wrapper = styled.div`
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
 /*
 
@@ -90,11 +96,13 @@ export const SectionBlock = styled.section`
     padding: 20px 80px 20px 80px;
   `}
   ${large`
-    padding: 40px 120px 40px 240px;
+    padding: 40px 120px 40px 120px;
   `}
-
+  flex: 1;
+  display: flex;
+  align-items: center;
   position: relative;
-
+  min-height: 100vh;
   .svg-background{
     position: absolute;
     top: 0px;
@@ -118,6 +126,7 @@ export const SectionContents = styled.div`
   position: relative;
   z-index: 10;
   background: ${white};
+  box-shadow: 8px 8px rgba(0,0,0,0.15);
   ${small`
     padding: ${spacing.half} ${spacing.half};
   `}
@@ -127,7 +136,18 @@ export const SectionContents = styled.div`
   ${large`
     padding: ${spacing.single} ${spacing.double};
   `}
-  height: 100%;
+  // height: 100%;
+  &.section-intro-contents{
+    ${small`
+      padding: ${spacing.half} ${spacing.half};
+    `}
+    ${medium`
+      padding: ${spacing.single} ${spacing.single};
+    `}
+    ${large`
+      padding: ${spacing.double} ${spacing.double};
+    `}
+  }
 `
 
 export const SectionTop = styled.div`
@@ -139,7 +159,6 @@ export const SectionTop = styled.div`
   `}
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: ${spacing.single};
 `
 
 export const SectionHeader = styled.div`
@@ -200,23 +219,9 @@ export const SectionDescription = styled.div`
 
 /* 
 
-Menu
+Icons
 
 */
-
-export const MenuContainer = styled.div`
-  display: none;
-  ${large`
-    display: flex;
-  `}
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
-  position: absolute;
-  z-index: 100
-  top: ${spacing.single};
-  left: 60px;
-`
 
 export const IconBlock = styled.div`
   ${small`
@@ -229,28 +234,31 @@ export const IconBlock = styled.div`
     display: flex;
   `}
   position: absolute;
-  left: 0;
-  top: 40px;
+  left: -120px;
+  top: 0px;
   bottom: 0;
   width: 240px;
   justify-content: center;
 
-  &:after{
-    display: block;
-    position: absolute;
-    content: " ";
-    background: ${black};
-    width: 4px;
-    margin-left: -2px;
-    left: 50%;
-    top: 80px;
-    bottom: -100px;
-    z-index: 90;
-  }
+  // &:after{
+  //   display: block;
+  //   position: absolute;
+  //   content: " ";
+  //   background: ${black};
+  //   width: 4px;
+  //   margin-left: -2px;
+  //   left: 50%;
+  //   top: 80px;
+  //   bottom: -100px;
+  //   z-index: 90;
+  // }
 `
 
 export const LogoBlock = styled.div`
   position: absolute;
+  top: -60px;
+  left: 50%;
+  margin-left: -60px;
   span {
     display: none;
   }
@@ -270,7 +278,7 @@ export const LogoImage = styled.h1`
   }
 `
 
-export const MenuLink = styled.a`
+export const MenuIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,7 +322,7 @@ export const MenuLink = styled.a`
 
 /*
 
-About
+Intro
 
 */
 
@@ -330,7 +338,7 @@ export const AboutDescription = styled.div`
   `}
   margin-bottom: ${spacing.single};
   p{
-    margin-bottom: ${spacing.single};
+    margin-bottom: ${spacing.single}; 
   }
 `
 
@@ -344,10 +352,17 @@ export const AboutLink = styled.a`
 
 export const SocialLinks = styled.div`
   display: flex;
-  margin-bottom: ${spacing.single};
+  justify-content: center;
+  align-items: center;
   > * + * {
     margin-left: ${spacing.half};
   }
+`
+
+export const SocialLinksPlaceholder = styled.div`
+  height: 1px;
+  border-bottom: 1px dotted ${black};
+  flex: 1;
 `
 
 export const SocialIcon = styled.div`
@@ -373,9 +388,6 @@ Items
 export const Items = styled.div`
   display: flex;
   flex-wrap: wrap;
-  > div{
-    margin-bottom: ${spacing.single};  
-  }
   ${large`
     > div {
       width: calc( ( 100% - ${spacing.double} ) / 2 );
@@ -387,6 +399,7 @@ export const Items = styled.div`
 `
 
 export const ItemBlock = styled.div`
+  margin-top: ${spacing.single};  
 `
 
 export const ItemTitle = styled.h3`
@@ -397,7 +410,10 @@ export const ItemTitle = styled.h3`
 export const ItemDescription = styled.div`
   font-size: ${fonts.small};
   p{
-    margin-bottom: 0px;
+    margin-bottom: ${spacing.half};
+    &:last-of-type{
+      margin-bottom: 0;
+    }
   }
 `
 export const ItemDate = styled.span`
