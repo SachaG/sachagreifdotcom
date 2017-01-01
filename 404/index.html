@@ -57,7 +57,7 @@
   -ms-flex-pack: justify;
   -webkit-justify-content: space-between;
  }
-.gWYiQo {
+.iZcpGD {
 
   flex: 1;
 
@@ -76,13 +76,13 @@
   position: relative;
  }
 @media screen and (max-width: 600px) {
-  .gWYiQo {
+  .iZcpGD {
 
     padding: 10px 10px 10px 10px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-  .gWYiQo {
+  .iZcpGD {
 
     padding: 20px 80px 20px 80px;
 
@@ -90,14 +90,14 @@
   }
 }
 @media screen and (min-width: 1201px) {
-  .gWYiQo {
+  .iZcpGD {
 
     padding: 40px 120px 40px 120px;
 
     min-height: 100vh;
   }
 }
-.gWYiQo .svg-background{
+.iZcpGD .svg-background{
 
   position: absolute;
 
@@ -115,49 +115,59 @@
 
   z-index: 1;
 }
-.gWYiQo:last-of-type .section-icon:after{
+.iZcpGD:last-of-type .section-icon:after{
 
   display: none;
 }
+.iZcpGD.section-intro{
+
+  perspective: 1000px;
+
+  -webkit-perspective: 1000px;
+}
 @media screen and (max-width: 600px) {
-  .gWYiQo.section-intro {
+  .iZcpGD.section-intro {
 
     padding-top: 80px;
   }
 }
-.gXMBYW { 
+.jcZDsC { 
   position: relative;
   z-index: 10;
   background: #ffffff;
   box-shadow: 8px 8px rgba(0,0,0,0.15);
+  border-left: 40px solid #eee;
  }
 @media screen and (max-width: 600px) {
-  .gXMBYW { 
+  .jcZDsC { 
     padding: 20px 20px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-  .gXMBYW { 
+  .jcZDsC { 
     padding: 40px 80px;
   }
 }
 @media screen and (min-width: 1201px) {
-  .gXMBYW { 
+  .jcZDsC { 
     padding: 40px 80px;
   }
 }
+.jcZDsC.section-intro-contents{ 
+  border: none;
+}
 @media screen and (max-width: 600px) {
-  .gXMBYW.section-intro-contents { 
+  .jcZDsC.section-intro-contents { 
     padding: 80px 20px 20px 20px;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1200px) {
-  .gXMBYW.section-intro-contents { 
+  .jcZDsC.section-intro-contents { 
     padding: 80px 40px 40px 40px;
   }
 }
 @media screen and (min-width: 1201px) {
-  .gXMBYW.section-intro-contents { 
+  .jcZDsC.section-intro-contents { 
     padding: 80px 80px;
   }
 }
@@ -248,18 +258,30 @@
 .gMgzUa p+p{
     margin-top: 20px;
 }
-.kCGGcO { 
+@keyframes fiYPcI {
+  0% { top: 50%; opacity: 0; margin-top: -60px; animation-timing-function: ease-in;}
+  60% { top: 50%; opacity: 1; margin-top: -60px; animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+  100% { top: -60px; opacity: 1; margin-top: 0px; animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);}
+
+}
+.bqeJNQ { 
   position: absolute;
-  top: -60px;
+  top: 50%;
   left: 50%;
+  margin-top: -60px;
   margin-left: -60px;
+  opacity: 0;
+  animation: fiYPcI 1000ms 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000) 1;
+  -webkit-animation: fiYPcI 1000ms 500ms cubic-bezier(0.215, 0.610, 0.355, 1.000) 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  z-index: 120;
  }
-.kCGGcO span { 
+.bqeJNQ span { 
   display: none;
 }
-.gNzggK { 
+.dsCugZ { 
   position: relative;
-  z-index: 120;
   width: 120px;
   height: 120px;
   background: #282B2E;
@@ -267,16 +289,33 @@
   border-radius: 100%;
   margin: 0;
  }
-.gNzggK path{ 
+.dsCugZ path{ 
   fill: white;
+}
+
+
+
+@keyframes jBdeIW {
+  from { opacity: 0; transform: rotateX(-80deg); }
+  to { opacity: 1; transform: rotateX(0deg); }
+
 }
 
 
 
 
 
+@keyframes wTLiJ {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 
+}
 
+@keyframes dxgQlt {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+
+}
 
 
 
@@ -307,7 +346,7 @@
 
     padding: 20px;
   }
-}</style></head><body><div id="react-mount"><div class="iQbGqt" data-reactroot="" data-reactid="1" data-react-checksum="152911038"><div style="background-color:#EB613D;" class="iHGval" data-reactid="2"><section class="gWYiQo" data-reactid="3"><svg class="d3-wrap svg-background" width="100" height="100" data-reactid="4"></svg><div class="kCGGcO" data-reactid="5"><a href="/sg2017/" data-reactid="6"><h1 class="gNzggK" data-reactid="7"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve"> <g id="Layer_2" display="none">
+}</style></head><body><div id="react-mount"><div class="iQbGqt" data-reactroot="" data-reactid="1" data-react-checksum="-1132708611"><div style="background-color:#EB613D;" class="iHGval" data-reactid="2"><section class="iZcpGD" data-reactid="3"><svg class="d3-wrap svg-background" width="100" height="100" data-reactid="4"></svg><div class="bqeJNQ" data-reactid="5"><a href="/sg2017/" data-reactid="6"><h1 class="dsCugZ" data-reactid="7"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve"> <g id="Layer_2" display="none">
   <g display="inline">
     <g>
       <path fill-rule="evenodd" clip-rule="evenodd" d="M244.888,186.7c8.459-0.023,15.624-3.326,20.965-8.766
@@ -355,11 +394,11 @@
     </g>
   </g>
 </g> </svg>
-</h1><span data-reactid="8">Sacha Greif</span></a></div><div class="gXMBYW" data-reactid="9"><div class="kiokDU" data-reactid="10"><div class="iaCmgk" data-reactid="11"><h2 class="dvtXOL" data-reactid="12">404</h2><div class="gMgzUa" data-reactid="13"><p>Sorry, I couldn't find what you were looking for.</p>
+</h1><span data-reactid="8">Sacha Greif</span></a></div><div class="jcZDsC" data-reactid="9"><div class="kiokDU" data-reactid="10"><div class="iaCmgk" data-reactid="11"><h2 class="dvtXOL" data-reactid="12">404</h2><div class="gMgzUa" data-reactid="13"><p>Sorry, I couldn't find what you were looking for.</p>
 <p>Maybe you're looking for content from my <a href="http://v3.sachagreif.com">old site</a>?</p>
 </div></div></div></div></section><div class="kRmhrp" data-reactid="14"><p>Made by Sacha Greif with <a href="https://github.com/gatsbyjs/gatsby">Gatsby</a>
 and <a href="https://riccardoscalco.github.io/textures/">Textures.js</a>,
 using the <a href="http://ego-icons.com">Ego</a> icons.
 Typeset in <a href="https://fonts.google.com/specimen/Space+Mono">Space Mono</a>.
 Guaranteed 100% Scroll-Hijacking-free.</p>
-</div></div></div></div><script src="/sg2017/bundle.js?t=1483256530510"></script></body></html>
+</div></div></div></div><script src="/sg2017/bundle.js?t=1483277383925"></script></body></html>
