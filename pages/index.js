@@ -22,8 +22,6 @@ export default class Index extends React.Component {
 
     const [intro, ...rest] = dataWithKeys
 
-    console.log(rest)
-    
     return (
       <div>
         <Helmet

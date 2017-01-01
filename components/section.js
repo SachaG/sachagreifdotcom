@@ -17,8 +17,8 @@ const Section = ({name, title, description, items, index, background, text, cta}
 
     <SectionContents>
 
-    <SectionIcon link={`#section-${index + 1}`} iconName={name} />
-    
+      <SectionIcon link={`#section-${index + 1}`} iconName={name} />
+
       <SectionTop>
         <SectionHeader>
     

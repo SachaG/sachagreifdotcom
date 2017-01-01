@@ -18,12 +18,12 @@ const spacing = {
 }
 
 const small = (...args) => css`
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 600px) {
     ${ css(...args) }
   }
 `
 const medium = (...args) => css`
-  @media screen and (min-width: 501px) and (max-width: 1200px) {
+  @media screen and (min-width: 601px) and (max-width: 1200px) {
     ${ css(...args) }
   }
 `
@@ -94,15 +94,16 @@ export const SectionBlock = styled.section`
   `}
   ${medium`
     padding: 20px 80px 20px 80px;
+    min-height: 100vh;
   `}
   ${large`
     padding: 40px 120px 40px 120px;
+    min-height: 100vh;
   `}
   flex: 1;
   display: flex;
   align-items: center;
   position: relative;
-  min-height: 100vh;
   .svg-background{
     position: absolute;
     top: 0px;
@@ -120,6 +121,11 @@ export const SectionBlock = styled.section`
       }
     }
   }
+  &.section-intro{
+    ${small`
+      padding-top: 80px;
+    `}
+  }
 `
 
 export const SectionContents = styled.div`
@@ -131,7 +137,7 @@ export const SectionContents = styled.div`
     padding: ${spacing.half} ${spacing.half};
   `}
   ${medium`
-    padding: ${spacing.half} ${spacing.half};
+    padding: ${spacing.single} ${spacing.double};
   `}
   ${large`
     padding: ${spacing.single} ${spacing.double};
@@ -139,10 +145,10 @@ export const SectionContents = styled.div`
   // height: 100%;
   &.section-intro-contents{
     ${small`
-      padding: ${spacing.half} ${spacing.half};
+      padding: ${spacing.double} ${spacing.half} ${spacing.half} ${spacing.half};
     `}
     ${medium`
-      padding: ${spacing.single} ${spacing.single};
+      padding: ${spacing.double} ${spacing.single} ${spacing.single} ${spacing.single};
     `}
     ${large`
       padding: ${spacing.double} ${spacing.double};
@@ -216,43 +222,11 @@ export const SectionDescription = styled.div`
     margin-top: ${spacing.half};
   }
 `
+/*
 
-/* 
-
-Icons
+Logo
 
 */
-
-export const IconBlock = styled.div`
-  ${small`
-    display: none;
-  `}
-  ${medium`
-    display: none;
-  `}
-  ${large`
-    display: flex;
-  `}
-  position: absolute;
-  left: -120px;
-  top: 0px;
-  bottom: 0;
-  width: 240px;
-  justify-content: center;
-
-  // &:after{
-  //   display: block;
-  //   position: absolute;
-  //   content: " ";
-  //   background: ${black};
-  //   width: 4px;
-  //   margin-left: -2px;
-  //   left: 50%;
-  //   top: 80px;
-  //   bottom: -100px;
-  //   z-index: 90;
-  // }
-`
 
 export const LogoBlock = styled.div`
   position: absolute;
@@ -278,12 +252,28 @@ export const LogoImage = styled.h1`
   }
 `
 
-export const MenuIcon = styled.div`
+/* 
+
+Icons
+
+*/
+
+export const IconBlock = styled.div`
+  ${small`
+    display: none;
+  `}
+  display: flex;
+  position: absolute;
+  left: -40px;
+  top: 35px;
+  justify-content: center;
+`
+
+export const Icon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: 35px;
   z-index: 110;
   border-radius: 100%;
   border: 4px solid ${black};
@@ -295,12 +285,12 @@ export const MenuIcon = styled.div`
   background: ${orangered};
   border-color: ${orangered};
 
-  &:hover{
-    background: ${orangered};
-    border-color: ${orangered};
-    color: ${white};
-    text-decoration: none;
-  }
+  // &:hover{
+  //   background: ${orangered};
+  //   border-color: ${orangered};
+  //   color: ${white};
+  //   text-decoration: none;
+  // }
   span{
     display: block;
   }
@@ -328,7 +318,7 @@ Intro
 
 export const AboutDescription = styled.div`
   ${small`
-    font-size: ${fonts.medium};
+    font-size: ${fonts.small};
   `}
   ${medium`
     font-size: ${fonts.large};
@@ -354,15 +344,26 @@ export const SocialLinks = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  > * + * {
-    margin-left: ${spacing.half};
-  }
+  flex-wrap: wrap;
+  ${small`
+    padding: 0 ${spacing.half};
+  `}
 `
 
-export const SocialLinksPlaceholder = styled.div`
+export const SocialLinksPlaceholder = styled.span`
+  ${small`
+    display: none;
+  `}
+  display: block;
   height: 1px;
   border-bottom: 1px dotted ${black};
   flex: 1;
+  &:first-of-type{
+    margin-right: 10px;
+  }
+  &:last-of-type{
+    margin-left: 10px;
+  }
 `
 
 export const SocialIcon = styled.div`
@@ -377,6 +378,7 @@ export const SocialIcon = styled.div`
   &:hover{
     background: ${orangered};
   }
+  margin: 0 10px;
 `
 
 /*
@@ -432,10 +434,10 @@ export const FooterContainer = styled.div`
     padding: 10px 10px 10px 10px;
   `}
   ${medium`
-    padding: ${spacing.half} 80px ${spacing.half} 80px;
+    padding: ${spacing.half};
   `}
   ${large`
-    padding: ${spacing.half} 120px ${spacing.half} 240px;
+    padding: ${spacing.half};
   `}
   text-align: center;
   background: ${black};
