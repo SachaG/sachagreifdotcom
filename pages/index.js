@@ -28,7 +28,9 @@ export default class Index extends React.Component {
           title={config.siteTitle}
           meta={[
             {"name": "description", "content": "Sacha Greif: Designer, Developer, Entrepreneur"},
-            {"name": "keywords", "content": "sample, something"},
+          ]}
+          link={[
+            {rel: "shortcut icon", href: "images/logo.png"},
           ]}
         />
         <SectionIntro {...intro} index={0} />

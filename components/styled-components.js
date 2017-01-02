@@ -1,4 +1,4 @@
-import { injectGlobal, css } from 'styled-components';
+import { injectGlobal, css, keyframes } from 'styled-components';
 
 import styled from 'styled-components';
 import {orangered, black, white, grey} from '../data/colors.yaml'
@@ -32,6 +32,8 @@ const large = (...args) => css`
     ${ css(...args) }
   }
 `
+
+const easeOutCubic = 'cubic-bezier(0.215, 0.610, 0.355, 1.000)'
 
 injectGlobal`
   
@@ -122,6 +124,7 @@ export const SectionBlock = styled.section`
     }
   }
   &.section-intro{
+    perspective: 1000px;
     ${small`
       padding-top: 80px;
     `}
@@ -133,6 +136,7 @@ export const SectionContents = styled.div`
   z-index: 10;
   background: ${white};
   box-shadow: 8px 8px rgba(0,0,0,0.15);
+  border-left: 40px solid #eee;
   ${small`
     padding: ${spacing.half} ${spacing.half};
   `}
@@ -144,6 +148,7 @@ export const SectionContents = styled.div`
   `}
   // height: 100%;
   &.section-intro-contents{
+    border: none;
     ${small`
       padding: ${spacing.double} ${spacing.half} ${spacing.half} ${spacing.half};
     `}
@@ -228,19 +233,30 @@ Logo
 
 */
 
+const fadeIn = keyframes`
+  from { opacity: 0; }
+  to { opacity: 1; }
+`
+
 export const LogoBlock = styled.div`
   position: absolute;
-  top: -60px;
+  top: 0px;
   left: 50%;
+  margin-top: -60px;
   margin-left: -60px;
   span {
     display: none;
   }
+  opacity: 0;
+  animation: ${fadeIn} 400ms 700ms ${easeOutCubic} 1;
+  animation-fill-mode: forwards;
+  z-index: 120;
 `
+
+
 
 export const LogoImage = styled.h1`
   position: relative;
-  z-index: 120;
   width: 120px;
   height: 120px;
   background: ${black};
@@ -264,7 +280,7 @@ export const IconBlock = styled.div`
   `}
   display: flex;
   position: absolute;
-  left: -40px;
+  left: -60px;
   top: 35px;
   justify-content: center;
 `
@@ -316,6 +332,37 @@ Intro
 
 */
 
+export const AboutWrapper = styled.div`
+  position: relative;
+`
+
+const swingDown = keyframes`
+  from { opacity: 0; transform: rotateX(-80deg); }
+  to { opacity: 1; transform: rotateX(0deg); }
+`
+
+export const AboutContents = styled.div`
+  transform-origin: top;
+  perspective: 500px;
+  opacity: 0;
+  transform: rotateX(-80deg);
+  animation: ${swingDown} 400ms 1000ms ${easeOutCubic} 1;
+  animation-fill-mode:forwards;
+  position: relative;
+  z-index: 10;
+  background: ${white};
+  box-shadow: 8px 8px rgba(0,0,0,0.15);
+  ${small`
+    padding: ${spacing.double} ${spacing.half} ${spacing.half} ${spacing.half};
+  `}
+  ${medium`
+    padding: ${spacing.double} ${spacing.single} ${spacing.single} ${spacing.single};
+  `}
+  ${large`
+    padding: ${spacing.double} ${spacing.double};
+  `}
+`
+
 export const AboutDescription = styled.div`
   ${small`
     font-size: ${fonts.small};
@@ -345,9 +392,46 @@ export const SocialLinks = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
   ${small`
     padding: 0 ${spacing.half};
   `}
+`
+
+const grow = keyframes`
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+`
+
+export const SocialIcon = styled.div`
+  height: 40px;
+  width: 40px;
+  background: ${black};
+  border-radius: 100%;
+  padding: 2px;
+
+  path{
+    fill: white;
+  }
+  &:hover{
+    background: ${orangered};
+  }
+  margin: 0 10px;
+  transform: scale(0);
+  animation: ${grow} 300ms 1300ms ${easeOutCubic} 1;
+  animation-fill-mode:forwards;
+
+  &:nth-child(3), &:nth-child(5){
+    animation-delay: 1400ms;
+  }
+  &:nth-child(2), &:nth-child(6){
+    animation-delay: 1500ms;
+  }
+`
+
+const expand = keyframes`
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 `
 
 export const SocialLinksPlaceholder = styled.span`
@@ -358,27 +442,17 @@ export const SocialLinksPlaceholder = styled.span`
   height: 1px;
   border-bottom: 1px dotted ${black};
   flex: 1;
+  transform: scaleX(0);
+  animation: ${expand} 100ms 1600ms ${easeOutCubic} 1;
+  animation-fill-mode:forwards;
   &:first-of-type{
     margin-right: 10px;
+    transform-origin: top right;
   }
   &:last-of-type{
     margin-left: 10px;
+    transform-origin: top left;
   }
-`
-
-export const SocialIcon = styled.div`
-  height: 40px;
-  width: 40px;
-  background: ${black};
-  border-radius: 100%;
-  padding: 2px;
-  path{
-    fill: white;
-  }
-  &:hover{
-    background: ${orangered};
-  }
-  margin: 0 10px;
 `
 
 /*

@@ -3,7 +3,7 @@ import MarkdownIt from 'markdown-it'
 const md = new MarkdownIt({
 })
 
-import {SectionBlock, SectionContents, SectionTitle, AboutDescription, AboutLinksBlock, AboutLink, SocialIcon, SocialLinks, SocialLinksPlaceholder } from './styled-components.js';
+import {SectionBlock, AboutWrapper, AboutContents, SectionTitle, AboutDescription, AboutLinksBlock, AboutLink, SocialIcon, SocialLinks, SocialLinksPlaceholder } from './styled-components.js';
 
 import Item from './item.js'
 import icons from '../data/icons.yaml'
@@ -24,25 +24,29 @@ const SectionIntro = ({name, title, description, social, index, background}) =>
 
     <Texture className="svg-background" width={100} height={100} data={{}} options={{index}}/>
 
-    <SectionContents className="section-intro-contents">
+    <AboutWrapper>
 
       <Logo />
 
-      <AboutDescription dangerouslySetInnerHTML={{ __html: md.render(contents) }} />
-
-      <SocialLinks>
-
-        <SocialLinksPlaceholder />
-        
-        {social.map((item, index) => <SocialIcon key={index}><a title={item.title} href={item.url} dangerouslySetInnerHTML={{__html: icons[item.title.toLowerCase()]}}/></SocialIcon>)}
-        
-        <SocialLinksPlaceholder />
-
-      </SocialLinks>
+      <AboutContents className="section-intro-contents">
 
 
+        <AboutDescription dangerouslySetInnerHTML={{ __html: md.render(contents) }} />
 
-    </SectionContents>
+        <SocialLinks>
+
+          <SocialLinksPlaceholder />
+          
+          {social.map((item, index) => <SocialIcon key={index}><a title={item.title} href={item.url} dangerouslySetInnerHTML={{__html: icons[item.title.toLowerCase()]}}/></SocialIcon>)}
+          
+          <SocialLinksPlaceholder />
+
+        </SocialLinks>
+
+      </AboutContents>
+
+    </AboutWrapper>
+
   </SectionBlock>
 
 export default SectionIntro
