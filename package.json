@@ -19,6 +19,7 @@
     "moment": "^2.17.1",
     "object-assign": "^4.1.0",
     "react-d3-wrap": "^2.1.2",
+    "react-faux-dom": "^3.0.0",
     "react-ga": "^2.1.2",
     "react-headroom": "^2.1.2",
     "react-helmet": "^3.2.2",
@@ -38,7 +39,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

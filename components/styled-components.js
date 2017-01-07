@@ -84,6 +84,19 @@ export const Wrapper = styled.div`
   justify-content: space-between;
 `
 
+export const TextureWrapper = styled.div`
+  svg {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+`
+
 /*
 
 Sections
@@ -106,16 +119,6 @@ export const SectionBlock = styled.section`
   display: flex;
   align-items: center;
   position: relative;
-  .svg-background{
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
   &:last-of-type{
     .section-icon{
       &:after{

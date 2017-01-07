@@ -1,18 +1,26 @@
 import React from 'react'
 import * as d3 from "d3";
 import textures from 'textures'
-import d3Wrap from 'react-d3-wrap'
 
-const Texture = d3Wrap({
- 
-  initialize (svg, data, options) {
+import ReactFauxDOM from 'react-faux-dom'
 
-    const d3svg = d3.select(svg)
+import { TextureWrapper } from './styled-components.js'
+
+class Texture extends React.Component {
+  render () {
+    // Create your element.
+    var node = ReactFauxDOM.createElement('svg')
+    var d3svg = d3.select(node)
+    // Change stuff using actual DOM functions.
+    // Even perform CSS selections!
+    // el.style.setProperty('color', 'red')
+    // el.setAttribute('class', 'box')
+
       // .attr("viewBox", "0 0 100 100")
       // .attr("preserveAspectRatio", "none")
     let t
 
-    switch(options.index) {
+    switch(this.props.options.index) {
 
       case 0: 
         t = textures.circles()
@@ -88,37 +96,9 @@ const Texture = d3Wrap({
       .attr("height", 3000)
       .attr("width", 3000)
       .style("fill", t.url())
-
-    //   let t1 = textures.circles()
-    //       .radius(4)
-    //       .fill("transparent")
-    //       .stroke("rgba(0,0,0,0.13)")
-    //       .size(20)
-    //       .strokeWidth(1)
-    //   let t2 = textures.circles()
-    //       .radius(8)
-    //       .fill("transparent")
-    //       .stroke("rgba(0,0,0,0.13)")
-    //       .size(20)
-    //       .strokeWidth(1)
-    // d3svg.call(t1);
-    // d3svg.call(t2);
-
-    // d3svg.append("rect")
-    //   .attr("x", 4)
-    //   .attr("y", 4)
-    //   .attr("height", 3000)
-    //   .attr("width", 3000)
-    //   .style("fill", t1.url())
-
-    // d3svg.append("rect")
-    //   .attr("x", 4)
-    //   .attr("y", 4)
-    //   .attr("height", 3000)
-    //   .attr("width", 3000)
-    //   .style("fill", t2.url())
-
+    // Render it to React elements.
+    return <TextureWrapper>{node.toReact()}</TextureWrapper>
   }
-})
+}
 
 export default Texture
