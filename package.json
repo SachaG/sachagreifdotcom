@@ -9,6 +9,7 @@
     "front-matter": "^3.1.0",
     "gatsby": "^2.18.22",
     "gatsby-plugin-netlify": "^2.1.31",
+    "gatsby-plugin-no-javascript": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
     "gatsby-plugin-styled-components": "^3.1.17",
@@ -41,6 +42,7 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
+    "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public",
     "dev": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -13,11 +13,13 @@ module.exports = {
         //         path: `${__dirname}/src/translations/`
         //     }
         // },
-        'gatsby-transformer-remark',
+        // 'gatsby-transformer-remark',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass',
         'gatsby-plugin-netlify',
-        'gatsby-plugin-styled-components'
+        'gatsby-plugin-styled-components',
+        'gatsby-plugin-no-javascript',
         // 'gatsby-plugin-webpack-bundle-analyzer',
+        
     ]
 }
