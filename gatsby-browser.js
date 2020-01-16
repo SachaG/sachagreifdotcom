@@ -1,6 +1,6 @@
-import ReactGA from 'react-ga'
+const ReactGA = require('react-ga')
 ReactGA.initialize('UA-30194315-4')
 
-exports.onRouteUpdate = (state, page, pages) => {
-  ReactGA.pageview(state.pathname)
+exports.onRouteUpdate = ({ location }) => {
+  ReactGA.pageview(location.pathname)
 }

@@ -1,0 +1,56 @@
+import React from 'react';
+import {
+  SectionBlock,
+  AboutWrapper,
+  AboutContents,
+  AboutDescription,
+  SocialIcon,
+  SocialLinks,
+  SocialLinksPlaceholder,
+} from './styled-components.js';
+import icons from '../data/icons.yaml';
+import Texture from './texture.js';
+import Logo from './logo.js';
+
+import MarkdownIt from 'markdown-it';
+const md = new MarkdownIt({});
+
+const contents = `
+  
+  I'm **Sacha Greif**, a designer, developer, and entrepreneur. 
+
+  I'm originally from Paris, France but these days I live in Osaka, Japan. 
+
+  [Say hello](mailto:hello@sachagreif.com), or keep scrolling.
+`;
+const SectionIntro = ({ name, title, description, social, index, background }) => (
+  <SectionBlock id={`section-${index}`} className="section-intro" style={{ backgroundColor: background }} index={index}>
+    <Texture className="svg-background" width={100} height={100} data={{}} options={{ index }} />
+
+    <AboutWrapper>
+      <Logo />
+
+      <AboutContents className="section-intro-contents">
+        <AboutDescription dangerouslySetInnerHTML={{ __html: md.render(contents) }} />
+
+        <SocialLinks>
+          <SocialLinksPlaceholder />
+
+          {social.map((item, index) => (
+            <SocialIcon key={index}>
+              <a
+                title={item.title}
+                href={item.url}
+                dangerouslySetInnerHTML={{ __html: icons[item.title.toLowerCase()] }}
+              />
+            </SocialIcon>
+          ))}
+
+          <SocialLinksPlaceholder />
+        </SocialLinks>
+      </AboutContents>
+    </AboutWrapper>
+  </SectionBlock>
+);
+
+export default SectionIntro;
