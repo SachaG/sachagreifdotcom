@@ -5,7 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "d3": "^5.15.0",
+    "d3": "^7.6.1",
     "front-matter": "^3.1.0",
     "gatsby": "^2.18.22",
     "gatsby-plugin-netlify": "^2.1.31",
